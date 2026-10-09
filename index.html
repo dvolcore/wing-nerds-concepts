@@ -36,7 +36,7 @@ header.top nav a{text-decoration:none;color:var(--mute)}header.top nav a:hover{c
 section.options{padding:36px 0 20px}
 .sec-h{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
 .sec-h h2{font:700 clamp(28px,4vw,44px)/1 Oswald;text-transform:uppercase;margin:6px 0 0}
-.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:border-color .2s,transform .2s}
 .card:hover{border-color:var(--o);transform:translateY(-3px)}
 .card .shot{display:block;aspect-ratio:16/10;overflow:hidden;background:#000;border-bottom:1px solid var(--line)}
@@ -49,7 +49,7 @@ section.options{padding:36px 0 20px}
 .card .go:hover,.card .go:focus-visible{background:#fff;color:#000;outline:none}
 .card.d .letter{color:var(--l)}
 .card.r{border-color:#3a3a3a;background:#1a1a1a}.card.r .letter{color:var(--c)}.card.r .go{background:var(--l);color:#000}.card.r .go.alt{background:transparent;color:var(--c);border:1px solid #3a3a3a}
-.card.r .meta{font:700 10px 'JetBrains Mono';letter-spacing:.1em;color:var(--mute);text-transform:uppercase}
+.card.s{border-color:#3a3a3a}.card.s .letter{color:var(--o)}.card.s .meta,.card.r .meta{font:700 10px 'JetBrains Mono';letter-spacing:.1em;color:var(--mute);text-transform:uppercase}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
 .chips a{font:700 10px 'JetBrains Mono';letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border:1px solid #3a3a3a;border-radius:3px;text-decoration:none;color:var(--c)}
 .chips a:hover{border-color:var(--l);color:var(--l)}
@@ -71,7 +71,6 @@ section.compare{padding:44px 0 30px;border-top:1px solid var(--line);margin-top:
 footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 40px;color:#857e72;font:500 11px/1.7 'JetBrains Mono',monospace}
 footer b{color:var(--c)}
 :focus-visible{outline:2px solid var(--l);outline-offset:2px}
-@media(max-width:1200px){.grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.how{grid-template-columns:1fr}}
 @media(max-width:600px){.grid{grid-template-columns:1fr}header.top nav{display:none}.cols{grid-template-columns:repeat(4,82%)}.hero{padding-top:36px}}
 </style>
@@ -80,7 +79,7 @@ footer b{color:var(--c)}
 <div class="strip">Website concept review · Round 1 · October 2026</div>
 <header class="top"><div class="wrap">
   <img src="shared/logo_web.png" alt="Wing-Nerds Flavor Lab" width="170" height="57">
-  <nav aria-label="Page"><a href="#options">The four options</a><a href="report/Wing-Nerds_Complete_Growth_Report.pdf">Growth Report</a><a href="#compare">Side by side</a></nav>
+  <nav aria-label="Page"><a href="#options">The four options</a><a href="slideshow/index.html">Slideshow</a><a href="report/Wing-Nerds_Complete_Growth_Report.pdf">Growth Report</a><a href="#compare">Side by side</a></nav>
 </div></header>
 
 <main class="wrap">
@@ -96,7 +95,7 @@ footer b{color:var(--c)}
   </section>
 
   <section class="options" id="options" aria-labelledby="opt-h">
-    <div class="sec-h"><div><div class="k">Pick a direction</div><h2 id="opt-h">The four options + the report</h2></div></div>
+    <div class="sec-h"><div><div class="k">Pick a direction</div><h2 id="opt-h">The four options, the slideshow + the report</h2></div></div>
     <div class="grid">
       <article class="card">
         <a class="shot" href="a-street-lab/index.html" aria-label="Open option A, Street Lab"><img src="previews/a-street-lab-top.jpg" alt="Street Lab homepage, top of page" loading="lazy"></a>
@@ -115,6 +114,12 @@ footer b{color:var(--c)}
         <div class="t"><span class="letter">D</span><h3>Alternate Build</h3><p>A second design team's take on the same three directions, with its own layouts, type and copy. Includes a built-in desktop / phone preview.</p>
           <div class="chips"><a href="d-alternate/a-street-lab/index.html">D · Street Lab</a><a href="d-alternate/b-flavor-lab/index.html">D · Flavor Lab</a><a href="d-alternate/c-grown-folks/index.html">D · Grown Folks</a></div>
           <a class="go" href="d-alternate/index.html">Open option D →</a></div>
+      </article>
+      <article class="card s">
+        <a class="shot" href="slideshow/index.html" aria-label="Open the campaign slideshow"><img src="previews/slideshow-top.jpg" alt="Campaign slideshow" loading="lazy"></a>
+        <div class="t"><span class="letter">▶</span><h3>Campaign Slideshow</h3><p>Every approved concept picture, no repeats, grouped by use: lifestyle, corporate, community, fashion, creator, food and brand.</p>
+          <span class="meta">177 pictures</span>
+          <a class="go" href="slideshow/index.html">Open the slideshow →</a></div>
       </article>
       <article class="card r">
         <a class="shot" href="report/Wing-Nerds_Complete_Growth_Report.pdf" aria-label="Open the Complete Growth Report PDF"><img src="previews/report-cover.jpg" alt="Wing-Nerds Complete Growth Report cover" loading="lazy"></a>
