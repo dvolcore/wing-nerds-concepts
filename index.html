@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Wing-Nerds Website Concepts</title>
+<meta name="description" content="Four homepage directions for the Wing-Nerds Flavor Lab website. Concept review.">
+<link rel="icon" href="shared/logo_web.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--o:#F04E14;--l:#A8F000;--c:#F2EBDD;--mute:#b8b1a3;--line:#2a2a2a;--panel:#141414}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0a0a0a;color:var(--c);font:400 16px/1.55 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 16px}
+.k{font:700 11px 'JetBrains Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--l)}
+/* top */
+.strip{background:var(--l);color:#000;font:700 11px 'JetBrains Mono',monospace;letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:7px 12px}
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:18px;padding-bottom:18px}
+header.top img{width:170px;height:auto;display:block}
+header.top nav{display:flex;gap:18px;font:600 13px Inter}
+header.top nav a{text-decoration:none;color:var(--mute)}header.top nav a:hover{color:var(--c)}
+.hero{padding:56px 0 28px}
+.hero h1{font:700 clamp(40px,7vw,84px)/.95 Oswald,sans-serif;text-transform:uppercase;margin:12px 0 18px;letter-spacing:-.01em}
+.hero h1 span{color:var(--o)}
+.hero p{max-width:680px;color:var(--mute);margin:0}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0 0;padding:0;list-style:none;counter-reset:s}
+.how li{border:1px solid var(--line);background:var(--panel);padding:14px 16px;border-radius:6px;font-size:14px;color:var(--mute);counter-increment:s}
+.how li::before{content:"0" counter(s);display:block;font:700 22px Oswald;color:var(--l);margin-bottom:4px}
+.how b{color:var(--c)}
+/* cards */
+section.options{padding:36px 0 20px}
+.sec-h{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+.sec-h h2{font:700 clamp(28px,4vw,44px)/1 Oswald;text-transform:uppercase;margin:6px 0 0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--o);transform:translateY(-3px)}
+.card .shot{display:block;aspect-ratio:16/10;overflow:hidden;background:#000;border-bottom:1px solid var(--line)}
+.card .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.card .t{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card .letter{font:700 46px/1 Oswald;color:var(--o)}
+.card h3{font:700 24px/1.05 Oswald;text-transform:uppercase;margin:0}
+.card p{margin:0;color:var(--mute);font-size:14px;flex:1}
+.card .go{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:6px;padding:12px 14px;background:var(--o);color:#fff;text-decoration:none;font:700 13px Oswald;letter-spacing:.06em;text-transform:uppercase;border-radius:4px}
+.card .go:hover,.card .go:focus-visible{background:#fff;color:#000;outline:none}
+.card.d .letter{color:var(--l)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chips a{font:700 10px 'JetBrains Mono';letter-spacing:.1em;text-transform:uppercase;padding:6px 8px;border:1px solid #3a3a3a;border-radius:3px;text-decoration:none;color:var(--c)}
+.chips a:hover{border-color:var(--l);color:var(--l)}
+/* compare */
+section.compare{padding:44px 0 30px;border-top:1px solid var(--line);margin-top:30px}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(240px,1fr));gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+.col{scroll-snap-align:start;background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.col .ch{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:1}
+.col .ch b{font:700 16px Oswald;text-transform:uppercase}
+.col .ch b i{font-style:normal;color:var(--o);margin-right:6px}
+.col .ch a{font:700 10px 'JetBrains Mono';letter-spacing:.1em;text-transform:uppercase;color:var(--l);text-decoration:none;white-space:nowrap}
+.col .tabs{display:flex;border-bottom:1px solid var(--line)}
+.col .tabs button{flex:1;background:none;border:0;border-right:1px solid var(--line);color:var(--mute);font:700 10px 'JetBrains Mono';letter-spacing:.08em;padding:8px 4px;cursor:pointer}
+.col .tabs button:last-child{border-right:0}
+.col .tabs button[aria-pressed="true"]{background:var(--l);color:#000}
+.col .scroller{max-height:1500px;overflow-y:auto}
+.col img{width:100%;display:block}
+.hint{color:var(--mute);font-size:13px;margin:0}
+footer{border-top:1px solid var(--line);margin-top:30px;padding:24px 0 40px;color:#857e72;font:500 11px/1.7 'JetBrains Mono',monospace}
+footer b{color:var(--c)}
+:focus-visible{outline:2px solid var(--l);outline-offset:2px}
+@media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.how{grid-template-columns:1fr}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}header.top nav{display:none}.cols{grid-template-columns:repeat(4,82%)}.hero{padding-top:36px}}
+</style>
+</head>
+<body>
+<div class="strip">Website concept review · Round 1 · October 2026</div>
+<header class="top"><div class="wrap">
+  <img src="shared/logo_web.png" alt="Wing-Nerds Flavor Lab" width="170" height="57">
+  <nav aria-label="Page"><a href="#options">The four options</a><a href="#compare">Side by side</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="k">wingnerds.com · homepage directions</div>
+    <h1>Four ways to <span>build the lab.</span></h1>
+    <p>Same kitchen, same menu, same order button. Four different personalities. Open each one, scroll it on your phone, try the buttons, then tell us which direction feels like Wing-Nerds. Mixing parts from different options is welcome.</p>
+    <ol class="how">
+      <li><b>Open an option.</b> Every page is a working homepage: menu, flavors, catering, find-the-counter, join the list.</li>
+      <li><b>Use the round-trip button.</b> The green <b>← All concepts</b> button in the bottom-left corner brings you straight back here.</li>
+      <li><b>Compare side by side.</b> Scroll the full-length layouts next to each other at the bottom of this page.</li>
+    </ol>
+  </section>
+
+  <section class="options" id="options" aria-labelledby="opt-h">
+    <div class="sec-h"><div><div class="k">Pick a direction</div><h2 id="opt-h">The four options</h2></div></div>
+    <div class="grid">
+      <article class="card">
+        <a class="shot" href="a-street-lab/index.html" aria-label="Open option A, Street Lab"><img src="previews/a-street-lab-top.jpg" alt="Street Lab homepage, top of page" loading="lazy"></a>
+        <div class="t"><span class="letter">A</span><h3>Street Lab</h3><p>The graffiti box and new menu come to life. Loud and playful, Flavor Crew up front, a Saucy / Crispy / Spicy picker.</p><a class="go" href="a-street-lab/index.html">Open option A →</a></div>
+      </article>
+      <article class="card">
+        <a class="shot" href="b-flavor-lab/index.html" aria-label="Open option B, The Flavor Lab"><img src="previews/b-flavor-lab-top.jpg" alt="The Flavor Lab homepage, top of page" loading="lazy"></a>
+        <div class="t"><span class="letter">B</span><h3>The Flavor Lab</h3><p>The nerd side done premium. Menu charcoal, flavor specimen cards with heat meters, a Flavor Finder and live batch pricing.</p><a class="go" href="b-flavor-lab/index.html">Open option B →</a></div>
+      </article>
+      <article class="card">
+        <a class="shot" href="c-grown-folks/index.html" aria-label="Open option C, Grown Folks"><img src="previews/c-grown-folks-top.jpg" alt="Grown Folks homepage, top of page" loading="lazy"></a>
+        <div class="t"><span class="letter">C</span><h3>Grown Folks</h3><p>Editorial and cinematic. Black and cream, big food photography, the strongest catering and office-lunch section.</p><a class="go" href="c-grown-folks/index.html">Open option C →</a></div>
+      </article>
+      <article class="card d">
+        <a class="shot" href="d-alternate/index.html" aria-label="Open option D, alternate build"><img src="previews/d-alternate-top.jpg" alt="Option D chooser page, top of page" loading="lazy"></a>
+        <div class="t"><span class="letter">D</span><h3>Alternate Build</h3><p>A second design team's take on the same three directions, with its own layouts, type and copy. Includes a built-in desktop / phone preview.</p>
+          <div class="chips"><a href="d-alternate/a-street-lab/index.html">D · Street Lab</a><a href="d-alternate/b-flavor-lab/index.html">D · Flavor Lab</a><a href="d-alternate/c-grown-folks/index.html">D · Grown Folks</a></div>
+          <a class="go" href="d-alternate/index.html">Open option D →</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="compare" id="compare" aria-labelledby="cmp-h">
+    <div class="sec-h"><div><div class="k">Full-length layouts</div><h2 id="cmp-h">Side by side</h2></div><p class="hint">Each column scrolls on its own. On a phone, swipe sideways between columns.</p></div>
+    <div class="cols">
+      <div class="col"><div class="ch"><b><i>A</i>Street Lab</b><a href="a-street-lab/index.html">Open →</a></div><div class="scroller"><img src="previews/a-street-lab-full.jpg" alt="Street Lab full-length homepage layout" loading="lazy"></div></div>
+      <div class="col"><div class="ch"><b><i>B</i>Flavor Lab</b><a href="b-flavor-lab/index.html">Open →</a></div><div class="scroller"><img src="previews/b-flavor-lab-full.jpg" alt="The Flavor Lab full-length homepage layout" loading="lazy"></div></div>
+      <div class="col"><div class="ch"><b><i>C</i>Grown Folks</b><a href="c-grown-folks/index.html">Open →</a></div><div class="scroller"><img src="previews/c-grown-folks-full.jpg" alt="Grown Folks full-length homepage layout" loading="lazy"></div></div>
+      <div class="col" id="dcol"><div class="ch"><b><i>D</i>Alternate</b><a id="dopen" href="d-alternate/a-street-lab/index.html">Open →</a></div>
+        <div class="tabs" role="group" aria-label="Option D variant">
+          <button type="button" aria-pressed="true" data-v="a-street-lab">Street Lab</button><button type="button" aria-pressed="false" data-v="b-flavor-lab">Flavor Lab</button><button type="button" aria-pressed="false" data-v="c-grown-folks">Grown Folks</button>
+        </div>
+        <div class="scroller"><img id="dimg" src="previews/d-a-street-lab-full.jpg" alt="Option D Street Lab full-length homepage layout" loading="lazy"></div></div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">
+  <b>Wing-Nerds Flavor Lab</b> · 5550 Troost Ave, inside the IN-n-OUT Market &amp; Kitchen, Kansas City, MO · Formerly Wing Boys<br>
+  Concept stage: imagery is concept art and will be replaced by real Wing-Nerds photography. Item names and heat levels marked "proposed" await owner approval. Prices from the Toast menu as of Oct 9, 2026. Forms on these pages send nothing.
+</div></footer>
+<script>
+document.querySelectorAll('#dcol .tabs button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('#dcol .tabs button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+  var v=b.dataset.v,img=document.getElementById('dimg');img.src='previews/d-'+v+'-full.jpg';img.alt='Option D '+b.textContent+' full-length homepage layout';
+  document.getElementById('dopen').href='d-alternate/'+v+'/index.html';});});
+</script>
+</body>
+</html>

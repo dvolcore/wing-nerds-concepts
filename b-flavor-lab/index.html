@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wing-Nerds Flavor Lab | Wings &amp; Sliders on Troost, Kansas City (formerly Wing Boys)</title>
+<meta name="description" content="Wing-Nerds Flavor Lab, formerly Wing Boys: wings in 14 formulas, signature sliders and the Adult Meal Deal. Order pickup at the kitchen counter inside the IN-n-OUT Market, 5550 Troost Ave, Kansas City. Tue–Sat 11 AM–8 PM.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Wing-Nerds Flavor Lab | Flavor worth geeking out over">
+<meta property="og:description" content="Wings, sliders and the Adult Meal Deal inside the IN-n-OUT Market on Troost. Formerly Wing Boys.">
+<meta property="og:image" content="../assets/cover_hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Wing-Nerds",
+  "alternateName": "Wing Boys",
+  "description": "Wing and slider kitchen inside the IN-n-OUT Market & Kitchen. Home of the Adult Meal Deal.",
+  "url": "https://wingnerds.com",
+  "telephone": "+1-816-895-3498",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5550 Troost Ave (inside the IN-n-OUT Market & Kitchen)",
+    "addressLocality": "Kansas City",
+    "addressRegion": "MO",
+    "postalCode": "64110",
+    "addressCountry": "US"
+  },
+  "openingHours": "Tu-Sa 11:00-20:00",
+  "servesCuisine": "Chicken Wings",
+  "priceRange": "$",
+  "hasMenu": "https://toast.app/r/wing-boys-troost-5550-troost-avenue/order",
+  "acceptsReservations": false
+}
+</script>
+<style>
+:root{
+  --black:#000000;
+  --ink:#1E1F22;
+  --char:#323438;
+  --char-2:#2A2C30;
+  --cream:#F2EBDD;
+  --muted:#BDB6A8;
+  --dim:#8E897F;
+  --orange:#F04E14;
+  --orange-hi:#FF6A33;
+  --lime:#A8F000;
+  --yellow:#F5C518;
+  --line:rgba(242,235,221,.14);
+  --line-2:rgba(242,235,221,.26);
+  --display:"Oswald","Arial Narrow",sans-serif;
+  --body:"Inter",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --wrap:1280px;
+  --gut:clamp(16px,4vw,48px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden}
+body{margin:0;background:var(--char);color:var(--cream);font:400 16px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--lime);color:#000;padding:10px 14px;font:700 13px var(--mono);text-decoration:none}
+.skip:focus{top:12px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+
+/* ---------- graphic language ---------- */
+.grid-paper{
+  background-color:var(--char);
+  background-image:
+    linear-gradient(rgba(242,235,221,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(242,235,221,.055) 1px,transparent 1px),
+    linear-gradient(rgba(242,235,221,.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(242,235,221,.022) 1px,transparent 1px);
+  background-size:120px 120px,120px 120px,24px 24px,24px 24px;
+  background-position:-1px -1px;
+}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.label{display:inline-flex;align-items:center;gap:10px;font:500 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--lime)}
+.label::before{content:"";width:22px;height:1px;background:currentColor}
+.h-display{font-family:var(--display);font-weight:700;text-transform:uppercase;line-height:.92;letter-spacing:-.005em;margin:0}
+h2.h-display{font-size:clamp(40px,6vw,84px)}
+.lede{color:var(--muted);font-size:clamp(16px,1.3vw,18px);max-width:56ch;margin:18px 0 0}
+.hl{color:var(--lime)}
+.section{padding:clamp(72px,9vw,128px) 0;position:relative}
+.sec-head{display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head .meta{text-align:right;color:var(--dim);font:500 11px/1.7 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.sec-head .meta b{color:var(--cream);font-weight:500}
+.ticks{height:10px;background:
+  repeating-linear-gradient(90deg,var(--line-2) 0 1px,transparent 1px 12px),
+  repeating-linear-gradient(90deg,var(--muted) 0 1px,transparent 1px 120px);
+  background-size:auto 6px,auto 10px;background-repeat:repeat-x;background-position:0 100%,0 100%;opacity:.7}
+
+/* drip divider */
+.drip{display:block;width:100%;height:auto;color:var(--orange);margin:-1px 0 0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:2px;font:600 15px/1 var(--display);letter-spacing:.09em;text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .2s var(--ease)}
+.btn-order{background:var(--orange);color:#000}
+.btn-order:hover{background:var(--orange-hi)}
+.btn-order:active{transform:translateY(1px)}
+.btn-ghost{border-color:var(--line-2);color:var(--cream);background:transparent}
+.btn-ghost:hover{border-color:var(--cream)}
+.btn .arr{font-family:var(--mono);font-weight:500}
+
+/* ---------- header ---------- */
+.strip{background:var(--black);border-bottom:1px solid var(--line);color:var(--muted);font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.strip .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px}
+.strip b{color:var(--lime);font-weight:500}
+.site-header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.92);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.brand{display:block;flex:none}
+.brand img{height:54px;width:auto}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--cream);padding:10px 12px;position:relative}
+.nav a::after{content:"";position:absolute;left:12px;right:12px;bottom:4px;height:1px;background:var(--lime);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
+.nav a:hover::after{transform:scaleX(1)}
+.site-header .btn{min-height:44px;padding:0 20px;font-size:14px}
+.menu-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--line-2);width:44px;height:44px;border-radius:2px;cursor:pointer;align-items:center;justify-content:center}
+.menu-toggle span{display:block;width:18px;height:1.5px;background:var(--cream);box-shadow:0 6px 0 var(--cream),0 -6px 0 var(--cream)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--black);position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(242,235,221,.045) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(242,235,221,.045) 1px,transparent 1px);
+  background-size:120px 120px;mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.4) 60%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,#000 0%,rgba(0,0,0,.4) 60%,transparent 100%);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:clamp(32px,4vw,64px);align-items:center;padding-top:clamp(48px,6vw,88px);padding-bottom:clamp(56px,6vw,96px)}
+.hero h1{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:clamp(56px,7.4vw,112px);line-height:.88;letter-spacing:-.01em;margin:22px 0 0}
+.hero h1 .hl{white-space:nowrap}
+.hero .lede{margin-top:26px;color:#CFC8BA;max-width:50ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.formerly{margin-top:28px;display:flex;align-items:center;gap:14px;color:var(--muted);font:500 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.formerly .tag{border:1px solid var(--line-2);padding:7px 10px;color:var(--cream)}
+.specimen{position:relative;margin:0;padding:14px;border:1px solid var(--line-2);background:#0B0B0C}
+.specimen::before,.specimen::after{content:"";position:absolute;width:22px;height:22px;border:2px solid var(--lime)}
+.specimen::before{top:-7px;left:-7px;border-right:0;border-bottom:0}
+.specimen::after{bottom:-7px;right:-7px;border-left:0;border-top:0}
+.specimen .bar{display:flex;justify-content:space-between;gap:12px;font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:2px 2px 12px}
+.specimen .bar b{color:var(--lime);font-weight:500}
+.specimen img{width:100%;aspect-ratio:4/3.3;object-fit:cover;object-position:50% 55%}
+.specimen .ticks{margin-top:12px}
+.specimen .scale{display:flex;justify-content:space-between;font:400 10px/1 var(--mono);color:var(--dim);margin-top:6px;letter-spacing:.08em}
+.specimen .callout{position:absolute;left:-22px;bottom:58px;background:var(--black);border:1px solid var(--line-2);padding:14px 16px;min-width:200px}
+.callout .k{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.callout .v{font:600 28px/1 var(--display);margin-top:8px;text-transform:uppercase}
+.callout .v small{font:500 12px var(--mono);color:var(--lime);letter-spacing:.1em;margin-left:6px}
+
+/* proof */
+.proof{background:var(--ink);border-bottom:1px solid var(--line)}
+.proof ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.proof li{padding:26px 24px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof .v{font:600 30px/1 var(--display);text-transform:uppercase;letter-spacing:.01em}
+.proof .v .star{color:var(--yellow)}
+.proof .k{font:500 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- meal deal ---------- */
+.deal{background:var(--ink)}
+.deal-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:0;border:1px solid var(--line-2)}
+.deal-photo{position:relative;min-height:560px;background:#000}
+.deal-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 60%}
+.deal-photo .stamp{position:absolute;left:20px;top:20px;background:rgba(0,0,0,.82);border:1px solid var(--line-2);padding:10px 12px;font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cream)}
+.deal-photo .stamp b{color:var(--lime);font-weight:500}
+.report{background:var(--black);padding:clamp(28px,3.4vw,48px);display:flex;flex-direction:column;border-left:1px solid var(--line-2)}
+.report-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line-2);padding-bottom:14px}
+.report h2{font-size:clamp(40px,4.4vw,64px);margin-top:22px}
+.report .sig{font:500 13px/1.5 var(--mono);color:var(--muted);letter-spacing:.08em;margin-top:12px}
+.spec{width:100%;border-collapse:collapse;margin:26px 0 0;font-size:15px}
+.spec th{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);text-align:left;padding:0 0 10px;border-bottom:1px solid var(--line-2)}
+.spec th:last-child,.spec td:last-child{text-align:right}
+.spec td{padding:13px 0;border-bottom:1px dashed var(--line);vertical-align:top}
+.spec td.n{font:500 12px/1.6 var(--mono);color:var(--lime);width:44px}
+.spec td.q{font:500 13px/1.6 var(--mono);color:var(--muted);white-space:nowrap;padding-left:10px}
+.spec td strong{font-weight:600}
+.spec td span{display:block;color:var(--dim);font-size:13px}
+.total{display:flex;justify-content:space-between;align-items:flex-end;margin-top:auto;padding-top:26px;gap:16px;flex-wrap:wrap}
+.total .k{font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.total .price{font:700 clamp(64px,6.4vw,92px)/.85 var(--display);color:var(--lime);letter-spacing:-.01em;margin-top:8px}
+.total .price sup{font-size:.42em;vertical-align:.95em;margin-right:2px}
+
+/* ---------- lab ---------- */
+.lab-grid{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:clamp(24px,3vw,40px);align-items:start}
+.panel{background:var(--ink);border:1px solid var(--line-2)}
+.panel-h{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line-2);font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.panel-h b{color:var(--lime);font-weight:500}
+.batch-col{position:sticky;top:96px;display:grid;gap:16px}
+.legend-p ol{list-style:none;margin:0;padding:12px 18px 16px}
+.legend-p li{display:grid;grid-template-columns:76px 1fr;align-items:center;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:14px;color:#D6CFC1}
+.legend-p li:last-child{border-bottom:0}
+.legend-p .bars{height:16px}
+.legend-p .bars i{width:10px}
+.legend-p .bars i:nth-child(1){height:6px}.legend-p .bars i:nth-child(2){height:8px}.legend-p .bars i:nth-child(3){height:10px}.legend-p .bars i:nth-child(4){height:13px}.legend-p .bars i:nth-child(5){height:16px}
+.batch-body{padding:22px 18px 22px}
+.batch h3{font:700 34px/1 var(--display);text-transform:uppercase;margin:0}
+.batch p{color:var(--muted);font-size:14px;margin:10px 0 0}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line-2);margin-top:22px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;height:64px;cursor:pointer;border-left:1px solid var(--line-2);transition:background .2s var(--ease),color .2s var(--ease)}
+.seg label:first-of-type{border-left:0}
+.seg label .num{font:700 26px/1 var(--display)}
+.seg label .u{font:500 9px/1 var(--mono);letter-spacing:.16em;color:var(--dim)}
+.seg label:hover{background:rgba(242,235,221,.05)}
+.seg input:checked+label{background:var(--lime);color:#000}
+.seg input:checked+label .u{color:#000}
+.seg input:focus-visible+label{outline:2px solid var(--lime);outline-offset:2px}
+.readouts{list-style:none;margin:18px 0 0;padding:0}
+.readouts li{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px dashed var(--line)}
+.readouts .k{font-weight:600}
+.readouts .k small{display:block;font:500 10px/1.6 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.readouts .v{font:600 32px/1 var(--display);font-variant-numeric:tabular-nums;transition:color .3s}
+.readouts .v.flash{color:var(--lime)}
+.batch .btn{width:100%;margin-top:20px}
+.batch .fine{font:500 11px/1.6 var(--mono);color:var(--dim);letter-spacing:.06em;margin-top:14px}
+
+.finder-bar{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;padding:16px 18px;border-bottom:1px solid var(--line-2)}
+.fgroup{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.fgroup .t{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-right:2px}
+.chip{min-height:36px;padding:0 13px;border:1px solid var(--line-2);background:transparent;border-radius:2px;cursor:pointer;font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;transition:all .18s var(--ease)}
+.chip:hover{border-color:var(--cream)}
+.chip[aria-pressed="true"]{background:var(--cream);color:#000;border-color:var(--cream)}
+.chip.heat{min-width:36px;padding:0 10px}
+.count{margin-left:auto;font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.count b{color:var(--lime);font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));background:var(--ink);overflow:hidden}
+.card{background:var(--ink);box-shadow:1px 0 0 var(--line-2),0 1px 0 var(--line-2);padding:20px 18px 18px;display:flex;flex-direction:column;gap:12px;min-height:236px;transition:background .2s var(--ease)}
+.card:hover{background:#25272B}
+.card[hidden]{display:none}
+.card .top{display:flex;justify-content:space-between;align-items:center;font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.card .type{border:1px solid var(--line-2);padding:4px 7px;color:var(--cream)}
+.card .type.dry{border-color:rgba(245,197,24,.55);color:var(--yellow)}
+.card h4{font:700 28px/1 var(--display);text-transform:uppercase;margin:4px 0 0;letter-spacing:.005em}
+.meter{display:flex;align-items:flex-end;gap:12px}
+.bars{display:flex;align-items:flex-end;gap:3px;height:22px}
+.bars i{display:block;width:12px;background:rgba(242,235,221,.12)}
+.bars i:nth-child(1){height:8px}.bars i:nth-child(2){height:11px}.bars i:nth-child(3){height:14px}.bars i:nth-child(4){height:18px}.bars i:nth-child(5){height:22px}
+.bars i.on:nth-child(1),.bars i.on:nth-child(2){background:var(--lime)}
+.bars i.on:nth-child(3){background:var(--yellow)}
+.bars i.on:nth-child(4),.bars i.on:nth-child(5){background:var(--orange)}
+.meter .lv{font:500 11px/1 var(--mono);letter-spacing:.14em;color:var(--muted)}
+.card .notes{color:#D6CFC1;font-size:14px;line-height:1.5;margin:0}
+.card .pairs{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);font-size:13px;color:var(--muted)}
+.card .pairs b{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--lime);display:block;margin-bottom:5px}
+.card.mix{background:repeating-linear-gradient(135deg,rgba(168,240,0,.05) 0 2px,transparent 2px 10px),var(--ink)}
+.card.mix h4{color:var(--lime)}
+.empty{padding:40px 18px;text-align:center;color:var(--muted);font:500 13px var(--mono);background:var(--ink)}
+.note{font:500 11px/1.6 var(--mono);color:var(--dim);letter-spacing:.06em;padding:14px 18px;border-top:1px solid var(--line-2)}
+
+/* ---------- menu ---------- */
+.menu{background:var(--ink)}
+.menu-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:clamp(24px,3vw,40px);align-items:start}
+.menu-photo{position:sticky;top:96px;margin:0}
+.menu-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 50%;border:1px solid var(--line-2)}
+.menu-photo figcaption{display:flex;justify-content:space-between;font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:12px}
+.tables{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.mt{background:var(--ink);padding:22px 20px}
+.mt.wide{grid-column:1/-1}
+.mt h3{font:700 26px/1 var(--display);text-transform:uppercase;margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.mt h3 small{font:500 10px/1 var(--mono);letter-spacing:.16em;color:var(--dim)}
+.mt dl{margin:14px 0 0}
+.mt .row{display:flex;align-items:baseline;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.mt .row:last-child{border-bottom:0}
+.mt dt{font-weight:500}
+.mt dt span{display:block;font-size:12.5px;color:var(--dim);font-weight:400}
+.mt .row::after{content:none}
+.mt .lead{flex:1;border-bottom:1px dotted rgba(242,235,221,.18);transform:translateY(-4px);min-width:12px}
+.mt dd{margin:0;font:500 14px/1 var(--mono);color:var(--cream);white-space:nowrap}
+.mt .sub{font:500 11px/1.6 var(--mono);color:var(--muted);letter-spacing:.04em;margin-top:10px}
+.flavors-list{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.flavors-list span{font:500 11px/1 var(--mono);letter-spacing:.06em;border:1px solid var(--line-2);padding:6px 8px;color:var(--muted)}
+.menu-foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:22px}
+.menu-foot .note{border:0;padding:0}
+
+/* ---------- crew ---------- */
+.crew-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:center}
+.crew-fig{position:relative;margin:0;border:1px solid var(--line-2);background:
+  radial-gradient(circle at 50% 46%,rgba(168,240,0,.08),transparent 60%),var(--ink);padding:28px 28px 16px}
+.crew-fig img{width:100%;max-width:440px;margin:0 auto;height:auto;aspect-ratio:1100/1078}
+.crew-fig .tags{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line-2);margin:16px -28px 0;}
+.crew-fig .tags span{text-align:center;padding:12px 4px 0;font:500 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);transition:color .2s}
+.crew-fig .tags span.on{color:var(--lime)}
+.crew-pick{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.crew-pick .chip{min-height:46px;padding:0 20px;font-size:13px}
+.rx{margin-top:22px;border:1px solid var(--line-2);background:var(--ink);padding:20px;min-height:154px}
+.rx .k{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.rx h3{font:700 30px/1 var(--display);text-transform:uppercase;margin:10px 0 0}
+.rx p{margin:8px 0 0;color:var(--muted);font-size:15px}
+.rx a{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--lime);display:inline-block;margin-top:14px}
+
+/* ---------- catering ---------- */
+.catering{background:var(--black)}
+.kits{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2)}
+.kit{background:var(--black);padding:26px 22px;display:flex;flex-direction:column;gap:10px}
+.kit .top{display:flex;justify-content:space-between;font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.kit .big{font:700 72px/.9 var(--display);color:var(--cream)}
+.kit .big small{font:500 13px var(--mono);letter-spacing:.12em;color:var(--lime);margin-left:6px}
+.kit h3{font:600 22px/1.1 var(--display);text-transform:uppercase;margin:4px 0 0}
+.kit p{margin:0;color:var(--muted);font-size:14px}
+.cat-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,3vw,40px);margin-top:clamp(24px,3vw,40px);align-items:stretch}
+.cat-photo{position:relative;margin:0;border:1px solid var(--line-2);min-height:420px}
+.cat-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.cat-photo .lead-time{position:absolute;right:16px;bottom:16px;background:var(--black);border:1px solid var(--lime);padding:14px 16px}
+.lead-time .v{font:700 40px/1 var(--display);color:var(--lime)}
+.lead-time .k{font:500 10px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--cream);margin-top:6px}
+form.lab-form{border:1px solid var(--line-2);background:var(--ink);padding:clamp(20px,2.4vw,30px)}
+.lab-form h3{font:700 30px/1 var(--display);text-transform:uppercase;margin:0}
+.lab-form .intro{color:var(--muted);font-size:14px;margin:8px 0 18px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.field input,.field select,.field textarea{background:#141517;border:1px solid var(--line-2);border-radius:2px;padding:12px 12px;min-height:46px;color:var(--cream);width:100%}
+.field textarea{min-height:84px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#7E796F}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--lime);box-shadow:0 0 0 1px var(--lime)}
+.lab-form .btn{margin-top:18px}
+.confirm{display:none;margin-top:16px;border:1px solid var(--lime);padding:14px 16px;background:rgba(168,240,0,.06)}
+.confirm.show{display:block}
+.confirm b{display:block;font:700 22px/1.1 var(--display);text-transform:uppercase;color:var(--lime)}
+.confirm p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+/* ---------- lifestyle ---------- */
+.life{background:var(--black);border-top:1px solid var(--line);padding:clamp(64px,8vw,112px) 0}
+.life-head{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:end;margin-bottom:36px}
+.life-head .lines{font:700 clamp(40px,5.6vw,80px)/.92 var(--display);text-transform:uppercase;margin:0}
+.life-head .lines span{display:block}
+.life-head .lines span:nth-child(2){color:var(--orange)}
+.life-head p{color:var(--muted);margin:0 0 6px}
+.mosaic{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:12px;height:440px}
+.mosaic figure{margin:0;position:relative;overflow:hidden;border:1px solid var(--line)}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic figcaption{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.85);padding:8px 10px;font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.slot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;border:1.5px dashed var(--line-2)!important;background:
+  linear-gradient(45deg,transparent 49.6%,rgba(242,235,221,.08) 49.8% 50.2%,transparent 50.4%),
+  linear-gradient(-45deg,transparent 49.6%,rgba(242,235,221,.08) 49.8% 50.2%,transparent 50.4%),#0D0D0E;padding:20px}
+.slot .cross{width:44px;height:44px;border:1px solid var(--lime);border-radius:50%;position:relative}
+.slot .cross::before,.slot .cross::after{content:"";position:absolute;background:var(--lime)}
+.slot .cross::before{left:50%;top:-8px;bottom:-8px;width:1px}
+.slot .cross::after{top:50%;left:-8px;right:-8px;height:1px}
+.slot b{font:600 20px/1.1 var(--display);text-transform:uppercase}
+.slot small{font:500 10px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim);max-width:24ch}
+
+/* ---------- join ---------- */
+.join-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:center}
+.perks{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid var(--line-2)}
+.perks li{display:grid;grid-template-columns:52px 1fr;padding:14px 0;border-bottom:1px solid var(--line);color:#D6CFC1}
+.perks li span{font:500 12px/1.6 var(--mono);color:var(--lime)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted);margin-top:14px}
+.check input{width:18px;height:18px;margin-top:2px;accent-color:var(--lime);flex:none}
+
+/* ---------- visit ---------- */
+.visit{background:var(--ink)}
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(24px,3vw,40px);align-items:stretch}
+.info{border:1px solid var(--line-2);background:var(--black);padding:clamp(22px,2.6vw,34px);display:flex;flex-direction:column;gap:22px}
+.info address{font-style:normal;font:600 30px/1.08 var(--display);text-transform:uppercase}
+.info address span{display:block;font:500 12px/1.6 var(--mono);color:var(--lime);letter-spacing:.12em;margin-top:8px}
+.hours{width:100%;border-collapse:collapse;font:500 13px var(--mono)}
+.hours td{padding:9px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right}
+.hours tr.off td{color:var(--dim)}
+.info .phone{font:600 26px/1 var(--display);text-decoration:none;letter-spacing:.02em}
+.info .phone:hover{color:var(--lime)}
+.info .row-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+.map{--x:60%;position:relative;border:1px solid var(--line-2);min-height:400px;overflow:hidden;background:#17181B}
+.map::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(242,235,221,.06) 2px,transparent 2px),
+  linear-gradient(90deg,rgba(242,235,221,.06) 2px,transparent 2px);background-size:96px 84px;background-position:22px 10px}
+.map .troost{position:absolute;top:0;bottom:0;left:var(--x);width:30px;background:#2B2D31;border-left:1px solid var(--line-2);border-right:1px solid var(--line-2)}
+.map .troost::after{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:1px dashed rgba(245,197,24,.45)}
+.map .street-lbl{position:absolute;top:80%;left:calc(var(--x) + 15px);transform:translate(-50%,-50%) rotate(-90deg);font:700 11px/1 var(--mono);letter-spacing:.3em;color:var(--cream);white-space:nowrap;background:#2B2D31;padding:4px 8px}
+.map .bldg{position:absolute;left:calc(var(--x) - 236px);top:26%;width:212px;height:150px;border:1.5px solid var(--cream);background:rgba(242,235,221,.04)}
+.map .bldg .nm{position:absolute;left:10px;top:10px;font:500 10px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.map .counter{position:absolute;left:14px;bottom:16px;width:70px;height:16px;background:var(--orange)}
+.map .door{position:absolute;right:-3px;top:58px;width:5px;height:30px;background:var(--lime)}
+.map .route{position:absolute;left:calc(var(--x) - 24px);top:calc(26% + 73px);width:38px;border-top:2px dashed var(--lime)}
+.map .route-in{position:absolute;left:48px;top:73px;right:8px;height:44px;border-top:2px dashed var(--lime);border-left:2px dashed var(--lime)}
+.map .pin{position:absolute;left:calc(var(--x) - 236px);top:calc(26% + 166px);display:flex;align-items:center;gap:8px;background:var(--black);border:1px solid var(--orange);padding:8px 10px;font:500 10px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.map .pin i{width:10px;height:10px;background:var(--orange);border-radius:50%;box-shadow:0 0 0 4px rgba(240,78,20,.25)}
+.map .north{position:absolute;right:16px;top:16px;font:700 11px/1 var(--mono);color:var(--muted);text-align:center;letter-spacing:.1em}
+.map .north::before{content:"";display:block;margin:0 auto 6px;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:14px solid var(--lime)}
+.map .legend{position:absolute;left:16px;top:16px;font:500 10px/1.8 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+.map .legend span{display:inline-block;width:12px;height:6px;margin-right:8px;vertical-align:middle}
+.steps{list-style:none;margin:clamp(24px,3vw,40px) 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-2);border:1px solid var(--line-2);counter-reset:s}
+.steps li{background:var(--black);padding:22px 20px;position:relative}
+.steps .n{font:500 11px/1 var(--mono);letter-spacing:.16em;color:var(--lime)}
+.steps h3{font:700 24px/1.05 var(--display);text-transform:uppercase;margin:12px 0 8px}
+.steps p{margin:0;color:var(--muted);font-size:14px}
+.steps li:not(:last-child)::after{content:"\2192";position:absolute;right:16px;top:20px;font:500 14px var(--mono);color:var(--dim)}
+.real{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;margin-top:16px;border:1px solid var(--line-2);background:var(--black);padding:12px}
+.real img{width:120px;height:150px;object-fit:cover;object-position:50% 45%}
+.real b{font:600 20px/1.1 var(--display);text-transform:uppercase;display:block}
+.real p{margin:6px 0 0;color:var(--muted);font-size:14px}
+.real .k{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--lime);display:block;margin-bottom:8px}
+
+/* ---------- footer ---------- */
+footer{background:var(--black);border-top:1px solid var(--line);padding:56px 0 40px}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px}
+.foot img{width:220px;height:auto}
+.foot h4{font:500 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+.foot p,.foot li{color:#D6CFC1;font-size:14px;margin:0}
+.foot ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--lime)}
+.legal{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between;font:500 11px/1.6 var(--mono);color:var(--dim);letter-spacing:.04em}
+.legal b{color:var(--cream);font-weight:500}
+
+/* sticky mobile order bar */
+.mbar{display:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .rv{opacity:1;transform:none;transition:none}*{transition:none!important}}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .nav a{padding:10px 8px}
+  .tables{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:960px){
+  .hero .wrap,.deal-grid,.lab-grid,.menu-grid,.crew-grid,.cat-grid,.join-grid,.visit-grid,.life-head{grid-template-columns:minmax(0,1fr)}
+  .batch-col,.menu-photo{position:static}
+  .menu-photo img{aspect-ratio:16/10}
+  .report{border-left:0;border-top:1px solid var(--line-2)}
+  .deal-photo{min-height:0;aspect-ratio:3/2}
+  .proof ul{grid-template-columns:1fr 1fr}
+  .proof li:nth-child(3){border-left:0;padding-left:0}
+  .proof li:nth-child(n+3){border-top:1px solid var(--line)}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps li::after{display:none}
+  .foot{grid-template-columns:1fr 1fr}
+  .kits{grid-template-columns:minmax(0,1fr)}
+  .mosaic{grid-template-columns:1fr 1fr;height:auto}
+  .mosaic figure:first-child{grid-column:1/-1;aspect-ratio:16/9}
+  .mosaic figure{aspect-ratio:4/5}
+  .crew-fig{max-width:520px}
+}
+@media (max-width:820px){
+  .nav,.site-header .btn{display:none}
+  .menu-toggle{display:inline-flex}
+  .site-header .wrap{height:64px}
+  .brand img{height:44px}
+  .nav.open{display:flex;flex-direction:column;position:absolute;left:0;right:0;top:64px;background:#000;border-bottom:1px solid var(--line-2);padding:8px var(--gut) 16px}
+  .nav.open a{padding:14px 0;border-bottom:1px solid var(--line);font-size:13px}
+  .nav.open a::after{display:none}
+  .strip .wrap span:last-child{display:none}
+  .mbar{display:grid;grid-template-columns:1fr auto;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(0,0,0,.94);border-top:1px solid var(--line-2)}
+  .mbar .btn{min-height:50px}
+  .mbar .btn-ghost{padding:0 16px}
+  body{padding-bottom:74px}
+}
+@media (max-width:560px){
+  .strip .now{display:none}
+  .sec-head{grid-template-columns:1fr}
+  .sec-head .meta{text-align:left}
+  .hero h1{font-size:clamp(44px,13.4vw,72px)}
+  .mt h3{flex-wrap:wrap}
+  .mt dd{white-space:normal;text-align:right}
+  .seg label .num{font-size:22px}
+  .hero-cta .btn{flex:1 1 100%}
+  .formerly{flex-wrap:wrap}
+  .specimen .callout{position:static;margin-top:12px;min-width:0}
+  .specimen .bar span:last-child{display:none}
+  .proof .v{font-size:24px}
+  .proof li{padding:18px 14px}
+  .proof li:nth-child(odd){padding-left:0}
+  .spec{font-size:14px}
+  .spec td.q{font-size:12px}
+  .count{margin-left:0;width:100%}
+  .cards{grid-template-columns:minmax(0,1fr)}
+  .card{min-height:0}
+  .fields{grid-template-columns:minmax(0,1fr)}
+  .steps{grid-template-columns:minmax(0,1fr)}
+  .foot{grid-template-columns:minmax(0,1fr)}
+  .map{--x:72%;min-height:380px}
+  .map .legend{top:auto;bottom:14px}
+  .mosaic{grid-template-columns:minmax(0,1fr)}
+  .mosaic figure,.mosaic figure:first-child{aspect-ratio:4/3}
+  .kit .big{font-size:60px}
+  .total .price{font-size:72px}
+  .real{grid-template-columns:96px 1fr}
+  .real img{width:96px;height:128px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="strip" role="note">
+  <div class="wrap">
+    <span><b>Formerly Wing Boys</b><span class="now"> &middot; now Wing-Nerds Flavor Lab</span></span>
+    <span>Inside the IN-n-OUT Market &amp; Kitchen &middot; 5550 Troost Ave &middot; Tue&ndash;Sat 11&ndash;8</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Wing-Nerds Flavor Lab, home">
+      <img src="../shared/logo_web.png" alt="The Wing Wing-Nerds Flavor Lab" width="162" height="54">
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#lab">The Lab</a>
+      <a href="#catering">Catering</a>
+      <a href="#visit">Visit</a>
+      <a href="#join">Join</a>
+    </nav>
+    <a class="btn btn-order" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Order Pickup <span class="arr" aria-hidden="true">&rarr;</span></a>
+    <button class="menu-toggle" aria-controls="nav" aria-expanded="false" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top" aria-labelledby="hero-h">
+  <div class="wrap">
+    <div class="rv">
+      <span class="label">File 001 &middot; Kansas City &middot; Troost Ave</span>
+      <h1 id="hero-h">Flavor worth <span class="hl">geeking out</span> over.</h1>
+      <p class="lede">Wings in fourteen formulas, signature sliders and the Adult Meal Deal, cooked to order at the kitchen counter inside the IN-n-OUT Market on Troost.</p>
+      <div class="hero-cta">
+        <a class="btn btn-order" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Order Pickup <span class="arr" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-ghost" href="https://www.doordash.com/" target="_blank" rel="noopener">Delivery</a>
+      </div>
+      <p class="formerly"><span class="tag">Formerly Wing Boys</span> New name. Same counter on Troost.</p>
+    </div>
+    <figure class="specimen rv">
+      <div class="bar"><span>Specimen <b>001</b> &mdash; Wings, mixed batch</span><span>Wet + dry</span></div>
+      <img src="../assets/product_wings.jpg" alt="A platter of glazed and dry-rubbed chicken wings" width="1536" height="1024" fetchpriority="high">
+      <div class="ticks" aria-hidden="true"></div>
+      <div class="scale" aria-hidden="true"><span>0</span><span>6</span><span>12</span><span>18</span><span>24 CT</span></div>
+      <figcaption class="callout">
+        <div class="k">Batch sizes</div>
+        <div class="v">6&middot;12&middot;18&middot;24<small>PC</small></div>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof" aria-label="At a glance">
+  <div class="wrap">
+    <ul>
+      <li><span class="v">4.8<span class="star" aria-hidden="true">&#9733;</span><span class="sr-only"> stars</span></span><span class="k">Rating on DoorDash</span></li>
+      <li><span class="v">Featured</span><span class="k">by Hood Dude Food Reviews</span></li>
+      <li><span class="v">Tue&ndash;Sat</span><span class="k">11 AM &ndash; 8 PM</span></li>
+      <li><span class="v">Pickup</span><span class="k">Inside the IN-n-OUT Market</span></li>
+    </ul>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true" focusable="false" style="background:var(--ink)">
+  <rect width="1440" height="6" fill="currentColor"/>
+  <path fill="currentColor" d="M118 5v18a7 7 0 0 0 14 0V5zM304 5v30a6 6 0 0 0 12 0V5zM520 5v12a6 6 0 0 0 12 0V5zM742 5v34a7 7 0 0 0 14 0V5zM968 5v16a5 5 0 0 0 10 0V5zM1176 5v26a7 7 0 0 0 14 0V5zM1352 5v10a5 5 0 0 0 10 0V5z"/>
+</svg>
+
+<!-- ADULT MEAL DEAL -->
+<section class="section deal" id="deal" aria-labelledby="deal-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">Lab report No. 01</span>
+      </div>
+      <div class="meta">Signature build &middot; <b>one price</b></div>
+    </div>
+    <div class="deal-grid rv">
+      <div class="deal-photo">
+        <img src="../assets/cover_hero.jpg" alt="Glazed wings in a black tray with fries and ranch, in front of a Wing-Nerds box" width="1536" height="1024" loading="lazy">
+        <span class="stamp">Sample <b>AMD-01</b> &middot; Adult Meal Deal</span>
+      </div>
+      <article class="report">
+        <div class="report-top"><span class="mono" style="color:var(--dim)">Spec sheet</span><span class="mono" style="color:var(--lime)">5 components</span></div>
+        <h2 class="h-display" id="deal-h">The Adult<br>Meal Deal</h2>
+        <p class="sig">Home of the Adult Meal Deal. A full grown-folks plate, built in one order.</p>
+        <table class="spec">
+          <thead><tr><th scope="col">No.</th><th scope="col">Component</th><th scope="col">Qty</th></tr></thead>
+          <tbody>
+            <tr><td class="n">01</td><td><strong>Wings</strong><span>Your choice of formula</span></td><td class="q">6 pc</td></tr>
+            <tr><td class="n">02</td><td><strong>Signature slider</strong></td><td class="q">1</td></tr>
+            <tr><td class="n">03</td><td><strong>Fries or corn</strong></td><td class="q">1</td></tr>
+            <tr><td class="n">04</td><td><strong>Uncle Keith&rsquo;s cookie</strong></td><td class="q">1</td></tr>
+            <tr><td class="n">05</td><td><strong>Uncle Keith&rsquo;s lemonade</strong><span>Eleven flavors</span></td><td class="q">32 oz</td></tr>
+          </tbody>
+        </table>
+        <div class="total">
+          <div><div class="k">Total, as specified</div><div class="price"><sup>$</sup>24.99</div></div>
+          <a class="btn btn-order" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Order the deal <span class="arr" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- THE LAB -->
+<section class="section grid-paper" id="lab" aria-labelledby="lab-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">The Lab &middot; Flavor Finder</span>
+        <h2 class="h-display" id="lab-h" style="margin-top:18px">Choose your flavor.<br><span class="hl">Name your run.</span></h2>
+        <p class="lede">Fourteen formulas, wet or dry. Filter by heat, read the notes, then build your batch. Up to two flavors per order.</p>
+      </div>
+      <div class="meta">Formulas on file <b>14</b><br>Wet <b>7</b> &middot; Dry <b>7</b></div>
+    </div>
+
+    <div class="lab-grid">
+      <div class="batch-col rv">
+      <aside class="panel batch" aria-labelledby="batch-h">
+        <div class="panel-h"><span>Build your batch</span><b id="batch-tag">12 CT</b></div>
+        <div class="batch-body">
+          <h3 id="batch-h">How many wings?</h3>
+          <p>Pick a count. Prices update below.</p>
+          <fieldset class="seg" style="padding:0;margin-inline:0">
+            <legend class="sr-only">Wing count</legend>
+            <input type="radio" name="count" id="c6" value="0"><label for="c6"><span class="num">6</span><span class="u">PC</span></label>
+            <input type="radio" name="count" id="c12" value="1" checked><label for="c12"><span class="num">12</span><span class="u">PC</span></label>
+            <input type="radio" name="count" id="c18" value="2"><label for="c18"><span class="num">18</span><span class="u">PC</span></label>
+            <input type="radio" name="count" id="c24" value="3"><label for="c24"><span class="num">24</span><span class="u">PC</span></label>
+          </fieldset>
+          <ul class="readouts" aria-live="polite">
+            <li><span class="k">Wing combo<small>Combo build</small></span><span class="v" id="p-combo">$16.49</span></li>
+            <li><span class="k">Bone-in<small>Wings only</small></span><span class="v" id="p-bone">$13.49</span></li>
+            <li><span class="k">Boneless<small>Wings only</small></span><span class="v" id="p-boneless">$10.49</span></li>
+          </ul>
+          <a class="btn btn-order" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Order this batch <span class="arr" aria-hidden="true">&rarr;</span></a>
+          <p class="fine">Up to 2 flavors per order. Prices and hours subject to change.</p>
+        </div>
+      </aside>
+      <div class="panel legend-p" aria-labelledby="scale-h">
+        <div class="panel-h"><span id="scale-h">Heat scale</span><b>Proposed</b></div>
+        <ol>
+          <li><span class="bars" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span>1 &middot; All flavor, no burn</li>
+          <li><span class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span>2 &middot; A little tingle</li>
+          <li><span class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>3 &middot; Warm, building</li>
+          <li><span class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>4 &middot; Grab a lemonade</li>
+          <li><span class="bars" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>5 &middot; Firestarter territory</li>
+        </ol>
+      </div>
+      </div>
+
+      <div class="panel rv" aria-labelledby="finder-h">
+        <h3 class="sr-only" id="finder-h">Flavor Finder</h3>
+        <div class="finder-bar" role="group" aria-label="Filter flavors">
+          <div class="fgroup" role="group" aria-label="Style">
+            <span class="t">Style</span>
+            <button class="chip" type="button" data-type="all" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-type="wet" aria-pressed="false">Wet</button>
+            <button class="chip" type="button" data-type="dry" aria-pressed="false">Dry rub</button>
+          </div>
+          <div class="fgroup" role="group" aria-label="Heat level">
+            <span class="t">Heat</span>
+            <button class="chip heat" type="button" data-heat="0" aria-pressed="true">Any</button>
+            <button class="chip heat" type="button" data-heat="1" aria-pressed="false" aria-label="Heat 1">1</button>
+            <button class="chip heat" type="button" data-heat="2" aria-pressed="false" aria-label="Heat 2">2</button>
+            <button class="chip heat" type="button" data-heat="3" aria-pressed="false" aria-label="Heat 3">3</button>
+            <button class="chip heat" type="button" data-heat="4" aria-pressed="false" aria-label="Heat 4">4</button>
+            <button class="chip heat" type="button" data-heat="5" aria-pressed="false" aria-label="Heat 5">5</button>
+          </div>
+          <p class="count" aria-live="polite"><b id="match">14</b> formulas match</p>
+        </div>
+        <div class="cards" id="cards"></div>
+        <p class="note">Heat levels proposed. Proposed item names, pending owner approval.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu" id="menu" aria-labelledby="menu-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">Menu &middot; Beyond the wing</span>
+        <h2 class="h-display" id="menu-h" style="margin-top:18px">Sliders, dogs<br>&amp; the sides.</h2>
+      </div>
+      <div class="meta">Verified on Toast<br><b>Oct 2026</b></div>
+    </div>
+    <div class="menu-grid">
+      <figure class="menu-photo rv">
+        <img src="../assets/product_sliders.jpg" alt="Three bacon cheeseburger sliders on a dark plate" width="1374" height="1145" loading="lazy">
+        <figcaption><span>Specimen 014 &mdash; Signature sliders</span><span>$3.99 ea</span></figcaption>
+      </figure>
+      <div class="rv">
+        <div class="tables">
+          <div class="mt">
+            <h3>Signature sliders <small>$3.99 EA</small></h3>
+            <dl>
+              <div class="row"><dt>Tennessee Smoke</dt><span class="lead"></span><dd>3.99</dd></div>
+              <div class="row"><dt>Smooth Operator</dt><span class="lead"></span><dd>3.99</dd></div>
+              <div class="row"><dt>Crunch Theory</dt><span class="lead"></span><dd>3.99</dd></div>
+              <div class="row"><dt>Bacon Hypothesis</dt><span class="lead"></span><dd>3.99</dd></div>
+            </dl>
+            <p class="sub">Combos &middot; 1 $6.99 &middot; 2 $9.99 &middot; 3 $11.99 &middot; 4 $13.99</p>
+          </div>
+          <div class="mt">
+            <h3>Dogs <small>COMBOS 6.99&ndash;8.99</small></h3>
+            <dl>
+              <div class="row"><dt>Classic Dog</dt><span class="lead"></span><dd>3.99</dd></div>
+              <div class="row"><dt>Polish Dog</dt><span class="lead"></span><dd>4.99</dd></div>
+              <div class="row"><dt>Diablo Dog<span>Bacon-wrapped Polish</span></dt><span class="lead"></span><dd>5.99</dd></div>
+            </dl>
+            <p class="sub">Dog combos &middot; $6.99 / $7.99 / $8.99</p>
+          </div>
+          <div class="mt">
+            <h3>Chicken &amp; starters</h3>
+            <dl>
+              <div class="row"><dt>Chicken slider</dt><span class="lead"></span><dd>4.99</dd></div>
+              <div class="row"><dt>Citrus Lab Strips<span>3 pc</span></dt><span class="lead"></span><dd>9.99</dd></div>
+              <div class="row"><dt>Mozzarella sticks<span>4 pc</span></dt><span class="lead"></span><dd>4.99</dd></div>
+              <div class="row"><dt>Crab rangoon<span>4 pc / 6 pc</span></dt><span class="lead"></span><dd>5.99 / 8.99</dd></div>
+            </dl>
+            <p class="sub">Chicken slider combos &middot; 1 $8.99 &middot; 2 $12.99 &middot; 3 $15.99</p>
+          </div>
+          <div class="mt">
+            <h3>Sides</h3>
+            <dl>
+              <div class="row"><dt>Fries<span>Regular / large</span></dt><span class="lead"></span><dd>2.99 / 3.99</dd></div>
+              <div class="row"><dt>Corn on the cob<span>5 pc / 10 pc</span></dt><span class="lead"></span><dd>3.39 / 5.39</dd></div>
+              <div class="row"><dt>Queso cup</dt><span class="lead"></span><dd>2.79</dd></div>
+              <div class="row"><dt>Uncle Keith&rsquo;s cookie</dt><span class="lead"></span><dd>2.49</dd></div>
+              <div class="row"><dt>Dipping sauce</dt><span class="lead"></span><dd>0.79</dd></div>
+            </dl>
+          </div>
+          <div class="mt wide">
+            <h3>Uncle Keith&rsquo;s Lemonade <small>16 OZ 3.99 &middot; 32 OZ 5.99 &middot; 12 OZ CAN 0.99</small></h3>
+            <div class="flavors-list" aria-label="Lemonade flavors">
+              <span>Original</span><span>Strawberry</span><span>Blue Raspberry</span><span>Cherry</span><span>Blueberry</span><span>Coconut</span><span>Watermelon</span><span>Green Apple</span><span>Raspberry</span><span>Mango</span><span>Peach</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-foot">
+          <p class="note">Proposed item names, pending owner approval.</p>
+          <a class="btn btn-ghost" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Full menu on Toast <span class="arr" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLAVOR CREW -->
+<section class="section grid-paper" id="crew" aria-labelledby="crew-h">
+  <div class="wrap crew-grid">
+    <figure class="crew-fig rv">
+      <img src="../shared/crew_trio.png" alt="The Flavor Crew: three cartoon chickens in tan, white and brown, wearing lime nerd glasses and black Wing-Nerds aprons" width="1100" height="1078" loading="lazy">
+      <div class="tags" aria-hidden="true"><span data-c="saucy">Saucy</span><span data-c="crispy">Crispy</span><span data-c="spicy">Spicy</span></div>
+    </figure>
+    <div class="rv">
+      <span class="label">The lab crew</span>
+      <h2 class="h-display" id="crew-h" style="margin-top:18px">The Flavor Crew.</h2>
+      <p class="lede">Big glasses, black aprons, strong opinions. Which one are you bringing to the table?</p>
+      <div class="crew-pick" role="group" aria-label="Pick a crew member">
+        <button class="chip" type="button" data-crew="saucy" aria-pressed="false">Saucy</button>
+        <button class="chip" type="button" data-crew="crispy" aria-pressed="false">Crispy</button>
+        <button class="chip" type="button" data-crew="spicy" aria-pressed="false">Spicy</button>
+      </div>
+      <div class="rx" aria-live="polite" id="rx">
+        <div class="k">Prescription</div>
+        <h3>Pick a crew member.</h3>
+        <p>We&rsquo;ll match you to two formulas from the Flavor Finder.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATERING -->
+<section class="section catering" id="catering" aria-labelledby="cat-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">Catering &middot; Lab Kits</span>
+        <h2 class="h-display" id="cat-h" style="margin-top:18px">Feed the whole<br><span class="hl">department.</span></h2>
+        <p class="lede">Office lunches, watch parties, family days. Wings, sliders and sides packed to travel. Tell us the headcount and we&rsquo;ll send a quote.</p>
+      </div>
+      <div class="meta">Lead time<br><b>24 hours</b></div>
+    </div>
+    <div class="kits rv">
+      <article class="kit">
+        <div class="top"><span>Kit A</span><span>Team lunch</span></div>
+        <div class="big">25<small>PEOPLE</small></div>
+        <h3>The 25 Kit</h3>
+        <p>A tray build for a team or a family table.</p>
+      </article>
+      <article class="kit">
+        <div class="top"><span>Kit B</span><span>Office / event</span></div>
+        <div class="big">50<small>PEOPLE</small></div>
+        <h3>The 50 Kit</h3>
+        <p>Scaled up for the whole floor or a big gathering.</p>
+      </article>
+      <article class="kit">
+        <div class="top"><span>Kit C</span><span>Custom</span></div>
+        <div class="big">&infin;<small>FULL EXPERIMENT</small></div>
+        <h3>The Full Experiment</h3>
+        <p>Wings, sliders, sides and lemonade, built around your event.</p>
+      </article>
+    </div>
+    <div class="cat-grid">
+      <figure class="cat-photo rv">
+        <img src="../assets/up_packaging.jpg" alt="An open Wing-Nerds box of glazed wings and fries beside a lemonade" width="1536" height="1024" loading="lazy">
+        <figcaption class="lead-time"><div class="v">24 HR</div><div class="k">Order lead time</div></figcaption>
+      </figure>
+      <form class="lab-form rv" id="quote-form" novalidate>
+        <h3>Request a Lab Kit quote</h3>
+        <p class="intro">Concept form: nothing is sent from this page.</p>
+        <div class="fields">
+          <div class="field"><label for="q-name">Name</label><input id="q-name" name="name" autocomplete="name" placeholder="Your name"></div>
+          <div class="field"><label for="q-org">Company / group</label><input id="q-org" name="org" autocomplete="organization" placeholder="Optional"></div>
+          <div class="field"><label for="q-date">Event date</label><input id="q-date" name="date" type="date"></div>
+          <div class="field"><label for="q-kit">Kit</label>
+            <select id="q-kit" name="kit"><option>The 25 Kit</option><option>The 50 Kit</option><option>The Full Experiment</option></select></div>
+          <div class="field full"><label for="q-contact">Phone or email</label><input id="q-contact" name="contact" autocomplete="email" placeholder="How should we reach you?"></div>
+          <div class="field full"><label for="q-notes">Notes</label><textarea id="q-notes" name="notes" placeholder="Headcount, flavors, pickup time"></textarea></div>
+        </div>
+        <button class="btn btn-order" type="submit">Send quote request <span class="arr" aria-hidden="true">&rarr;</span></button>
+        <div class="confirm" role="status" id="quote-ok"><b>Request logged.</b><p>Thanks. In the live site this goes straight to the kitchen and we follow up to confirm your kit.</p></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- LIFESTYLE -->
+<section class="life" aria-labelledby="life-h">
+  <div class="wrap">
+    <div class="life-head">
+      <h2 class="lines" id="life-h"><span>Clock out.</span><span>Flavor on.</span></h2>
+      <div>
+        <p class="label" style="margin-bottom:14px">Grown folks. Big flavor.</p>
+        <p>After work, date night, the crew&rsquo;s watch party. Good company. Serious wings.</p>
+      </div>
+    </div>
+    <div class="mosaic rv">
+      <figure><img src="../assets/up_good_company.jpg" alt="Four friends laughing and sharing wings and sliders around a table" width="1536" height="1024" loading="lazy" style="object-position:50% 40%"><figcaption>Good company</figcaption></figure>
+      <figure><img src="../assets/uniform_models.jpg" alt="Two Wing-Nerds crew members in black aprons and yellow glasses holding meal boxes" width="1536" height="1024" loading="lazy" style="object-position:50% 30%"><figcaption>Your order. Our crew.</figcaption></figure>
+      <figure class="slot">
+        <span class="cross" aria-hidden="true"></span>
+        <b>Real customer photo<br>goes here</b>
+        <small>Reserved for a Wing-Nerds regular, shared with permission</small>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section class="section grid-paper" id="join" aria-labelledby="join-h">
+  <div class="wrap join-grid">
+    <div class="rv">
+      <span class="label">Join the Lab</span>
+      <h2 class="h-display" id="join-h" style="margin-top:18px">Get on the<br><span class="hl">lab list.</span></h2>
+      <p class="lede">Text or email from the kitchen. Only when it matters.</p>
+      <ul class="perks">
+        <li><span>01</span>New formulas when they leave the lab</li>
+        <li><span>02</span>Hours changes and holiday closures</li>
+        <li><span>03</span>Lab Kit catering openings</li>
+      </ul>
+    </div>
+    <form class="lab-form rv" id="join-form" novalidate>
+      <h3>Join the Lab</h3>
+      <p class="intro">Concept form: nothing is sent from this page.</p>
+      <div class="fields">
+        <div class="field"><label for="j-name">First name</label><input id="j-name" name="fname" autocomplete="given-name" placeholder="First name"></div>
+        <div class="field"><label for="j-flavor">Go-to flavor</label>
+          <select id="j-flavor" name="flavor"><option>Still deciding</option><option>Wet</option><option>Dry rub</option><option>The hotter the better</option></select></div>
+        <div class="field full"><label for="j-contact">Mobile number or email</label><input id="j-contact" name="contact" autocomplete="email" placeholder="(816) 555-0100 or you@email.com"></div>
+      </div>
+      <label class="check"><input type="checkbox" name="consent"> Yes, send me Wing-Nerds texts or emails. Reply STOP or unsubscribe anytime.</label>
+      <button class="btn btn-order" type="submit">Join the Lab <span class="arr" aria-hidden="true">&rarr;</span></button>
+      <div class="confirm" role="status" id="join-ok"><b>You&rsquo;re in the Lab.</b><p>Welcome to the crew. Watch for news from the kitchen.</p></div>
+    </form>
+  </div>
+</section>
+
+<svg class="drip" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true" focusable="false" style="background:var(--ink)">
+  <rect width="1440" height="6" fill="currentColor"/>
+  <path fill="currentColor" d="M64 5v22a7 7 0 0 0 14 0V5zM286 5v12a5 5 0 0 0 10 0V5zM470 5v32a7 7 0 0 0 14 0V5zM690 5v16a6 6 0 0 0 12 0V5zM904 5v28a6 6 0 0 0 12 0V5zM1102 5v12a5 5 0 0 0 10 0V5zM1290 5v24a7 7 0 0 0 14 0V5z"/>
+</svg>
+
+<!-- VISIT -->
+<section class="section visit" id="visit" aria-labelledby="visit-h" style="padding-top:clamp(56px,7vw,96px)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">Visit &middot; Find the counter</span>
+        <h2 class="h-display" id="visit-h" style="margin-top:18px">We&rsquo;re inside<br><span class="hl">the market.</span></h2>
+        <p class="lede">Wing-Nerds is the kitchen counter inside the IN-n-OUT Market &amp; Kitchen. Walk in, head for the counter, give your name.</p>
+      </div>
+      <div class="meta">Pickup only at the counter<br><b>Name on the order</b></div>
+    </div>
+
+    <div class="visit-grid">
+      <div class="info rv">
+        <address>5550 Troost Ave<br>Kansas City, MO 64110<span>Inside the IN-n-OUT Market &amp; Kitchen</span></address>
+        <table class="hours" aria-label="Hours">
+          <tbody>
+            <tr class="off"><td>Mon</td><td>Closed</td></tr>
+            <tr><td>Tue &ndash; Sat</td><td>11:00 AM &ndash; 8:00 PM</td></tr>
+            <tr class="off"><td>Sun</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <a class="phone" href="tel:+18168953498">816-895-3498</a>
+        <div class="row-btns">
+          <a class="btn btn-order" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Order Pickup</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=5550+Troost+Ave+Kansas+City+MO+64110" target="_blank" rel="noopener">Directions</a>
+        </div>
+      </div>
+      <div class="map rv" role="img" aria-label="Schematic map: the IN-n-OUT Market sits on Troost Ave at 5550. Enter the market door from Troost; the Wing-Nerds kitchen counter is inside.">
+        <div class="troost"></div>
+        <div class="street-lbl">TROOST AVE</div>
+        <div class="bldg"><span class="nm">IN-n-OUT<br>Market &amp; Kitchen<br>No. 5550</span><span class="route-in"></span><span class="counter"></span><span class="door"></span></div>
+        <div class="route"></div>
+        <div class="pin"><i></i>Wing-Nerds counter</div>
+        <div class="north">N</div>
+        <div class="legend"><span style="background:var(--lime)"></span>Market door<br><span style="background:var(--orange)"></span>Kitchen counter<br>Schematic &middot; not to scale</div>
+      </div>
+    </div>
+
+    <ol class="steps rv">
+      <li><span class="n">STEP 01</span><h3>Head to 5550 Troost</h3><p>Look for the IN-n-OUT Market &amp; Kitchen on Troost Ave.</p></li>
+      <li><span class="n">STEP 02</span><h3>Walk into the market</h3><p>Wing-Nerds is inside. Come in through the market&rsquo;s front door.</p></li>
+      <li><span class="n">STEP 03</span><h3>Find the kitchen counter</h3><p>Head to the kitchen counter. That&rsquo;s the lab.</p></li>
+      <li><span class="n">STEP 04</span><h3>Give your name</h3><p>Tell the crew the name on your order and grab your bag.</p></li>
+    </ol>
+
+    <div class="real rv">
+      <img src="../assets/box_real_lemonade.jpg" alt="A hand holding the printed Wing-Nerds box with the Uncle Keith's Lemonade label" width="720" height="1280" loading="lazy">
+      <div><span class="k">Actual photo</span><b>Look for the box.</b><p>Orders leave the counter in the printed Wing-Nerds box. If it&rsquo;s in your hand, you found us.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="../shared/logo_web.png" alt="Wing-Nerds Flavor Lab" width="220" height="73" loading="lazy">
+        <p style="margin-top:16px;color:var(--muted)">Flavor worth geeking out over.<br><span class="mono" style="color:var(--lime);font-size:11px">Formerly Wing Boys</span></p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <p>Wing-Nerds Flavor Lab<br>Inside the IN-n-OUT Market &amp; Kitchen<br>5550 Troost Ave, Kansas City, MO 64110<br><a href="tel:+18168953498">816-895-3498</a></p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul><li><a href="#menu">Menu</a></li><li><a href="#lab">The Lab</a></li><li><a href="#catering">Catering</a></li><li><a href="#visit">Visit</a></li><li><a href="#join">Join</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow &amp; order</h4>
+        <ul>
+          <li><a href="#" aria-label="Instagram @wingnerdskc (coming soon)">Instagram @wingnerdskc</a></li>
+          <li><a href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Order pickup (Toast)</a></li>
+          <li><a href="https://www.doordash.com/" target="_blank" rel="noopener">Delivery (DoorDash)</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span><b>Formerly Wing Boys.</b> Prices and hours subject to change.</span>
+      <span>Allergen note: our kitchen handles common allergens. Ask at the counter before you order.</span>
+      <span>Concept imagery. Final site uses real Wing-Nerds photography.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-order" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" target="_blank" rel="noopener">Order Pickup <span class="arr" aria-hidden="true">&rarr;</span></a>
+  <a class="btn btn-ghost" href="https://www.doordash.com/" target="_blank" rel="noopener">Delivery</a>
+</div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+
+  /* ---- flavor data (heat levels proposed) ---- */
+  var F=[
+    {n:'Plain',t:'wet',h:1,notes:'Clean, crisp, no sauce. The control sample.',p:'Ranch dip, Original lemonade',pr:false},
+    {n:'Garlic Parm Formula',t:'wet',h:1,notes:'Roasted garlic, butter and parmesan. Rich and savory.',p:'Fries, Lemon Drop on the side',pr:true},
+    {n:'Lemon Drop',t:'wet',h:2,notes:'Bright lemon pepper, tossed wet. Zesty and peppery.',p:'Corn on the cob, Peach lemonade',pr:false},
+    {n:'Crowned BBQ',t:'wet',h:2,notes:'Smoky-sweet barbecue with a sticky finish.',p:'Tennessee Smoke slider, fries',pr:true},
+    {n:'Sweet Heat Theory',t:'wet',h:3,notes:'Sweet glaze up front, a slow warm build behind it.',p:'Strawberry lemonade, queso cup',pr:true},
+    {n:'Jamaican Me Happy',t:'wet',h:4,notes:'Jerk spice, allspice and pepper. Deep and aromatic.',p:'Mango lemonade, corn on the cob',pr:false},
+    {n:'Firestarter Buffalo',t:'wet',h:5,notes:'Classic buffalo, pushed hot. Vinegar bite, real heat.',p:'Ranch dip, Watermelon lemonade',pr:true},
+    {n:'Ranch',t:'dry',h:1,notes:'Herby, cool, buttermilk-style dry rub.',p:'Fries, Original lemonade',pr:false},
+    {n:'Lemon Pepper Ranch',t:'dry',h:1,notes:'Lemon pepper meets ranch herbs. Crisp skin stays crisp.',p:'Crab rangoon, Green Apple lemonade',pr:false},
+    {n:'Hint of Jalapeño',t:'dry',h:2,notes:'Green chile flavor with a gentle kick.',p:'Queso cup, Coconut lemonade',pr:false},
+    {n:'Cajun',t:'dry',h:3,notes:'Paprika, garlic and cayenne. Bayou-style dust.',p:'Corn on the cob, Cherry lemonade',pr:false},
+    {n:'Spicy Citrus',t:'dry',h:3,notes:'Citrus zest and chile. Tangy, then warm.',p:'Citrus Lab Strips, Blueberry lemonade',pr:false},
+    {n:'Sriracha Ranch',t:'dry',h:3,notes:'Garlicky chile heat cooled with ranch herbs.',p:'Mozzarella sticks, Raspberry lemonade',pr:false},
+    {n:'Citrus Chili',t:'dry',h:4,notes:'Lime-bright chili rub. Sharp, hot and fresh.',p:'Blue Raspberry lemonade, fries',pr:false}
+  ];
+  var cards=document.getElementById('cards');
+  var html='';
+  F.forEach(function(f,i){
+    var no=('0'+(i+1)).slice(-2), bars='';
+    for(var b=1;b<=5;b++) bars+='<i'+(b<=f.h?' class="on"':'')+'></i>';
+    html+='<article class="card" data-type="'+f.t+'" data-heat="'+f.h+'">'+
+      '<div class="top"><span>Formula No. '+no+'</span><span class="type '+f.t+'">'+(f.t==='wet'?'Wet':'Dry rub')+'</span></div>'+
+      '<h4>'+f.n+'</h4>'+
+      '<div class="meter"><span class="bars" role="img" aria-label="Heat '+f.h+' of 5">'+bars+'</span><span class="lv">HEAT '+f.h+'/5</span></div>'+
+      '<p class="notes">'+f.notes+'</p>'+
+      '<p class="pairs"><b>Pairs with</b>'+f.p+'</p></article>';
+  });
+  html+='<article class="card mix"><div class="top"><span>Formula No. 15</span><span class="type">Yours</span></div><h4>Split the batch</h4><p class="notes">Up to two flavors per order. Pair a wet with a dry, or a mild with a hot, and name your run.</p><p class="pairs"><b>Pairs with</b>Any two formulas above</p></article>';
+  html+='<p class="empty" id="empty" hidden>No formula at that heat in this style yet. Try another level.</p>';
+  cards.innerHTML=html;
+
+  var st={type:'all',heat:0};
+  var match=document.getElementById('match'), empty=document.getElementById('empty');
+  function apply(){
+    var n=0;
+    cards.querySelectorAll('.card:not(.mix)').forEach(function(c){
+      var ok=(st.type==='all'||c.dataset.type===st.type)&&(st.heat===0||+c.dataset.heat===st.heat);
+      c.hidden=!ok; if(ok) n++;
+    });
+    match.textContent=n; empty.hidden=n!==0;
+  }
+  function press(sel,btn){document.querySelectorAll(sel).forEach(function(b){b.setAttribute('aria-pressed',b===btn?'true':'false')})}
+  document.querySelectorAll('[data-type]').forEach(function(b){ if(b.tagName!=='BUTTON')return;
+    b.addEventListener('click',function(){st.type=b.dataset.type;press('button[data-type]',b);apply()})});
+  document.querySelectorAll('button[data-heat]').forEach(function(b){
+    b.addEventListener('click',function(){st.heat=+b.dataset.heat;press('button[data-heat]',b);apply()})});
+  function setFilter(type,heat){
+    st.type=type;st.heat=heat;
+    press('button[data-type]',document.querySelector('button[data-type="'+type+'"]'));
+    press('button[data-heat]',document.querySelector('button[data-heat="'+heat+'"]'));
+    apply();
+  }
+
+  /* ---- build your batch ---- */
+  var P={combo:['11.49','16.49','22.99','29.99'],bone:['7.49','13.49','19.49','27.49'],boneless:['6.49','10.49','16.49','24.49']};
+  var counts=['6','12','18','24'];
+  var out={combo:document.getElementById('p-combo'),bone:document.getElementById('p-bone'),boneless:document.getElementById('p-boneless')};
+  document.querySelectorAll('input[name="count"]').forEach(function(r){
+    r.addEventListener('change',function(){
+      var i=+r.value;
+      Object.keys(out).forEach(function(k){
+        out[k].textContent='$'+P[k][i];
+        out[k].classList.remove('flash'); void out[k].offsetWidth; out[k].classList.add('flash');
+        setTimeout(function(){out[k].classList.remove('flash')},500);
+      });
+      document.getElementById('batch-tag').textContent=counts[i]+' CT';
+    });
+  });
+
+  /* ---- crew picker ---- */
+  var CREW={
+    saucy:{h:'Saucy: go wet.',p:'Sweet Heat Theory and Crowned BBQ. Sticky fingers, no regrets.',type:'wet',heat:0},
+    crispy:{h:'Crispy: go dry.',p:'Lemon Pepper Ranch and Cajun. All crunch, rub to the bone.',type:'dry',heat:0},
+    spicy:{h:'Spicy: bring the heat.',p:'Firestarter Buffalo and Citrus Chili. Have a lemonade ready.',type:'all',heat:0,hot:true}
+  };
+  var rx=document.getElementById('rx');
+  document.querySelectorAll('button[data-crew]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var c=CREW[b.dataset.crew];
+      press('button[data-crew]',b);
+      document.querySelectorAll('.crew-fig .tags span').forEach(function(s){s.classList.toggle('on',s.dataset.c===b.dataset.crew)});
+      rx.innerHTML='<div class="k">Prescription &middot; '+b.dataset.crew+'</div><h3>'+c.h+'</h3><p>'+c.p+'</p><a href="#lab" data-go="'+b.dataset.crew+'">See them in the Flavor Finder &rarr;</a>';
+    });
+  });
+  rx.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-go]'); if(!a)return;
+    var k=a.dataset.go;
+    if(k==='spicy') setFilter('all',0), (function(){ /* show heat 4+ */
+      cards.querySelectorAll('.card:not(.mix)').forEach(function(c){c.hidden=+c.dataset.heat<4});
+      match.textContent=cards.querySelectorAll('.card:not(.mix):not([hidden])').length; })();
+    else setFilter(CREW[k].type,0);
+  });
+
+  /* ---- forms: visual only, nothing is sent ---- */
+  [['quote-form','quote-ok'],['join-form','join-ok']].forEach(function(p){
+    var f=document.getElementById(p[0]), ok=document.getElementById(p[1]);
+    f.addEventListener('submit',function(e){e.preventDefault();ok.classList.add('show');f.querySelector('button[type="submit"]').disabled=true;});
+  });
+
+  /* ---- mobile nav ---- */
+  var t=document.querySelector('.menu-toggle'), nav=document.getElementById('nav');
+  t.addEventListener('click',function(){var o=nav.classList.toggle('open');t.setAttribute('aria-expanded',o);t.setAttribute('aria-label',o?'Close menu':'Open menu')});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');t.setAttribute('aria-expanded','false')}});
+
+  /* ---- reveal ---- */
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('in')});
+})();
+</script>
+<style id="wn-review-nav-css">#wn-review-nav{position:fixed;left:14px;bottom:92px;z-index:2147483000;display:flex;gap:6px;font:600 12px/1 Inter,system-ui,sans-serif}#wn-review-nav a{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:999px;background:#000;color:#F2EBDD;border:1.5px solid #A8F000;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.45)}#wn-review-nav a:hover,#wn-review-nav a:focus-visible{background:#A8F000;color:#000;outline:none}@media(max-width:899px){#wn-review-nav{left:10px;bottom:84px}#wn-review-nav a{padding:7px 10px;font-size:11px;opacity:.92}}@media(min-width:900px){#wn-review-nav{bottom:20px;left:20px}}@media print{#wn-review-nav{display:none}}</style><nav id="wn-review-nav" aria-label="Concept review navigation"><a href="../index.html">← All concepts</a></nav><script>if(window.self!==window.top){var n=document.getElementById("wn-review-nav");n&&n.remove()}</script></body>
+</html>

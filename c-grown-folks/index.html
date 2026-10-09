@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wing-Nerds Flavor Lab | Wings & Sliders on Troost, Kansas City (formerly Wing Boys)</title>
+<meta name="description" content="Wing-Nerds Flavor Lab (formerly Wing Boys): wings, sliders and the Adult Meal Deal inside the IN-n-OUT Market & Kitchen, 5550 Troost Ave, Kansas City. Order pickup, book a Lab Kit for your office lunch, and find the counter.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Wing-Nerds",
+  "alternateName": ["Wing Boys", "Wing-Nerds Flavor Lab"],
+  "slogan": "Flavor worth geeking out over.",
+  "url": "https://wingnerds.com",
+  "telephone": "+1-816-895-3498",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "5550 Troost Ave (inside the IN-n-OUT Market & Kitchen)",
+    "addressLocality": "Kansas City",
+    "addressRegion": "MO",
+    "postalCode": "64110",
+    "addressCountry": "US"
+  },
+  "openingHours": "Tu-Sa 11:00-20:00",
+  "servesCuisine": "Chicken Wings",
+  "priceRange": "$",
+  "hasMenu": "https://wingnerds.com/menu",
+  "potentialAction": {
+    "@type": "OrderAction",
+    "target": "https://toast.app/r/wing-boys-troost-5550-troost-avenue/order"
+  }
+}
+</script>
+<style>
+:root{
+  --black:#000;
+  --ink:#0d0d0d;
+  --char:#323438;
+  --cream:#F2EBDD;
+  --cream-2:#E8DFCC;
+  --paper-ink:#17150f;
+  --muted-cream:#5b5546;
+  --orange:#F04E14;
+  --orange-deep:#B23A0C;
+  --lime:#A8F000;
+  --yellow:#F5C518;
+  --rule-dark:rgba(242,235,221,.16);
+  --rule-light:rgba(23,21,15,.18);
+  --display:"Oswald","Arial Narrow",sans-serif;
+  --body:"Inter",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+  --gut:clamp(20px,5vw,72px);
+  --max:1320px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--black);color:var(--cream);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:2px}
+.cream :focus-visible{outline-color:var(--orange-deep)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--lime);color:#000;padding:10px 16px;z-index:200;font-weight:600}
+.skip:focus{left:12px;top:12px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* type */
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;display:flex;align-items:center;gap:12px;margin:0 0 22px}
+.kicker::before{content:"";width:28px;height:1px;background:currentColor;opacity:.6}
+.dark .kicker{color:var(--lime)}
+.cream .kicker{color:var(--orange-deep)}
+.h-xl,.h-l,.h-m{font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:-.005em;margin:0}
+.h-xl{font-size:clamp(54px,9vw,148px);line-height:.86}
+.h-l{font-size:clamp(42px,6.2vw,96px);line-height:.9}
+.h-m{font-size:clamp(28px,3.2vw,44px);line-height:.98}
+.accent-o{color:var(--orange)}
+.accent-l{color:var(--lime)}
+.lede{font-size:clamp(18px,1.5vw,21px);line-height:1.55;max-width:34em}
+.dark .lede{color:rgba(242,235,221,.82)}
+.cream .lede{color:var(--muted-cream)}
+.folio{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.7}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--display);font-weight:500;text-transform:uppercase;letter-spacing:.06em;font-size:17px;padding:16px 28px;border-radius:999px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s,color .25s,border-color .25s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--orange);color:#000}
+.btn-primary:hover{background:#ff6a33}
+.btn-ghost{border-color:rgba(242,235,221,.5);color:var(--cream)}
+.btn-ghost:hover{border-color:var(--cream);background:rgba(242,235,221,.06)}
+.btn-ink{background:var(--black);color:var(--cream)}
+.btn-ink:hover{background:var(--char)}
+.arrow{transition:transform .25s}
+.btn:hover .arrow{transform:translateX(4px)}
+.textlink{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+
+/* sections */
+.dark{background:var(--black);color:var(--cream)}
+.cream{background:var(--cream);color:var(--paper-ink)}
+section{position:relative}
+.pad{padding:clamp(80px,11vw,160px) 0}
+
+/* strip + header */
+.strip{background:var(--black);border-bottom:1px solid var(--rule-dark);font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,235,221,.75)}
+.strip .wrap{display:flex;justify-content:space-between;gap:24px;padding-top:10px;padding-bottom:10px}
+.strip b{color:var(--lime);font-weight:500}
+.header{position:sticky;top:0;z-index:50;background:rgba(0,0,0,.92);backdrop-filter:saturate(140%) blur(8px);-webkit-backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--rule-dark)}
+.header .wrap{display:flex;align-items:center;gap:32px;height:78px}
+.brand{display:block;flex:none}
+.brand img{height:54px;width:auto}
+.nav{display:flex;gap:30px;margin-left:auto}
+.nav a{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:15px;text-decoration:none;color:rgba(242,235,221,.8);position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--orange);transition:right .3s cubic-bezier(.2,.8,.2,1)}
+.nav a:hover{color:var(--cream)}
+.nav a:hover::after{right:0}
+.header .btn{padding:12px 22px;font-size:15px}
+
+/* hero */
+.hero{position:relative;min-height:min(92vh,900px);display:flex;align-items:flex-end;overflow:hidden;background:#000}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:68% 55%;transform:scale(1.04);animation:settle 2.4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 0%,rgba(0,0,0,.88) 28%,rgba(0,0,0,.25) 58%,rgba(0,0,0,0) 75%),linear-gradient(0deg,#000 0%,rgba(0,0,0,0) 32%)}
+.hero .wrap{position:relative;width:100%;padding-bottom:clamp(56px,8vw,110px);padding-top:120px}
+.hero-copy{max-width:640px}
+.hero h1{opacity:0;animation:rise 1s .15s cubic-bezier(.2,.8,.2,1) forwards}
+.hero .kicker,.hero .lede,.hero .ctas,.hero .formerly{opacity:0;animation:rise .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero .kicker{animation-delay:.05s}
+.hero .lede{animation-delay:.35s;margin:28px 0 36px}
+.hero .ctas{animation-delay:.5s;display:flex;flex-wrap:wrap;gap:14px}
+.hero .formerly{animation-delay:.65s}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.formerly{margin-top:34px;font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(242,235,221,.7);display:flex;align-items:center;gap:12px}
+.formerly span{white-space:nowrap}
+.formerly{flex-wrap:wrap;row-gap:6px}
+.formerly s{text-decoration-color:var(--orange);text-decoration-thickness:2px;color:rgba(242,235,221,.9)}
+.hero-caption{position:absolute;right:var(--gut);bottom:clamp(56px,8vw,110px);font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(242,235,221,.6);writing-mode:vertical-rl;transform:rotate(180deg)}
+
+/* proof */
+.proof{border-top:1px solid var(--rule-dark);border-bottom:1px solid var(--rule-dark)}
+.proof ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.proof li{padding:30px 0;display:flex;align-items:baseline;gap:14px;border-left:1px solid var(--rule-dark);padding-left:32px}
+.proof li:first-child{border-left:0;padding-left:0}
+.proof .big{font-family:var(--display);font-size:34px;font-weight:600;line-height:1;color:var(--cream)}
+.proof .big .star{color:var(--yellow)}
+.proof .small{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(242,235,221,.72);line-height:1.5}
+
+/* adult meal deal */
+.deal-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,96px);align-items:center}
+.deal-media{position:relative}
+.deal-media img{width:100%;aspect-ratio:4/3.3;object-fit:cover}
+.deal-media figcaption{position:absolute;left:0;bottom:0;background:var(--black);color:var(--cream);padding:14px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.price-row{display:flex;align-items:flex-end;gap:20px;margin:30px 0 8px}
+.price{font-family:var(--display);font-weight:600;font-size:clamp(72px,8vw,120px);line-height:.8;color:var(--paper-ink)}
+.price sup{font-size:.4em;vertical-align:top;position:relative;top:.18em;margin-right:2px}
+.price-note{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-cream);padding-bottom:8px}
+.deal-list{list-style:none;padding:0;margin:34px 0 40px;border-top:1px solid var(--rule-light);counter-reset:d}
+.deal-list li{counter-increment:d;display:grid;grid-template-columns:44px 1fr auto;align-items:baseline;gap:12px;padding:16px 0;border-bottom:1px solid var(--rule-light)}
+.deal-list li::before{content:counter(d,decimal-leading-zero);font-family:var(--mono);font-size:12px;color:var(--orange-deep)}
+.deal-list strong{font-family:var(--display);font-weight:500;text-transform:uppercase;font-size:21px;letter-spacing:.02em}
+.deal-list span{font-size:14px;color:var(--muted-cream)}
+.signature{font-family:var(--display);text-transform:uppercase;font-size:15px;letter-spacing:.2em;color:var(--orange-deep);margin-bottom:18px}
+
+/* wings */
+.split-head{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:end;margin-bottom:clamp(48px,6vw,80px)}
+.wings-feature{display:grid;grid-template-columns:1.25fr 1fr;gap:0;border:1px solid var(--rule-dark)}
+.wings-feature img{width:100%;height:100%;min-height:440px;object-fit:cover;object-position:50% 55%}
+.batch{padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:26px;border-left:1px solid var(--rule-dark)}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--rule-dark);border-radius:999px;padding:4px}
+.seg button{background:none;border:0;color:var(--cream);font-family:var(--display);font-size:22px;font-weight:500;padding:10px 0;border-radius:999px;cursor:pointer;transition:background .25s,color .25s}
+.seg button[aria-pressed="true"]{background:var(--lime);color:#000}
+.seg button:hover:not([aria-pressed="true"]){background:rgba(242,235,221,.08)}
+.prices{list-style:none;padding:0;margin:0}
+.prices li{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule-dark)}
+.prices .n{font-family:var(--display);text-transform:uppercase;font-size:19px;letter-spacing:.03em}
+.prices .n small{display:block;font-family:var(--body);text-transform:none;letter-spacing:0;font-size:13px;color:rgba(242,235,221,.6)}
+.prices .p{font-family:var(--display);font-size:32px;font-weight:500;color:var(--orange);font-variant-numeric:tabular-nums}
+.fine{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:rgba(242,235,221,.62);text-transform:uppercase;line-height:1.6}
+.flavors-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin:clamp(64px,8vw,110px) 0 28px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chips button{background:none;border:1px solid var(--rule-dark);color:var(--cream);font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:10px 16px;border-radius:999px;cursor:pointer;transition:all .2s}
+.chips button[aria-pressed="true"]{background:var(--cream);color:#000;border-color:var(--cream)}
+.flavor-grid{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);column-gap:clamp(32px,5vw,80px)}
+.flavor{display:grid;grid-template-columns:1fr auto;gap:4px 20px;padding:20px 0;border-bottom:1px solid var(--rule-dark);transition:opacity .3s}
+.flavor[hidden]{display:none}
+.flavor h4{margin:0;font-family:var(--display);font-weight:500;text-transform:uppercase;font-size:24px;letter-spacing:.01em;line-height:1.1}
+.flavor p{margin:0;font-size:14px;color:rgba(242,235,221,.66);grid-column:1}
+.flavor .tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(242,235,221,.55);margin-left:8px;vertical-align:middle;font-weight:400}
+.heat{grid-row:1/span 2;grid-column:2;align-self:center;display:flex;gap:4px}
+.heat i{width:9px;height:22px;border-radius:2px;background:rgba(242,235,221,.14)}
+.heat i.on{background:var(--orange)}
+.heat[data-level="5"] i.on{background:linear-gradient(var(--yellow),var(--orange))}
+.legend{display:flex;gap:18px;align-items:center;margin-top:28px;flex-wrap:wrap}
+
+/* sliders */
+.menu-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(40px,6vw,96px);align-items:start}
+.menu-media img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 50%}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:40px 48px;margin-top:44px}
+.menu-block h3{font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-deep);margin:0 0 6px;padding-bottom:10px;border-bottom:2px solid var(--paper-ink)}
+.menu-block ul{list-style:none;margin:0;padding:0}
+.menu-block li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--rule-light);font-size:15.5px}
+.menu-block li b{font-weight:600}
+.menu-block li em{font-style:normal;color:var(--muted-cream);font-size:13px;display:block}
+.menu-block li .pr{font-family:var(--display);font-size:19px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.proposed{display:inline-block;margin-top:28px;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-cream);border:1px dashed rgba(23,21,15,.35);padding:8px 12px}
+
+/* lifestyle */
+.life{position:relative;overflow:hidden;background:#000}
+.life>img{position:relative;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 25%}
+.life::after{content:"";position:absolute;left:0;right:0;top:0;aspect-ratio:3/2;background:linear-gradient(0deg,#000 0%,rgba(0,0,0,.6) 22%,rgba(0,0,0,0) 45%)}
+.life .wrap{position:relative;z-index:1;width:100%;margin-top:clamp(-260px,-16vw,-120px);padding-bottom:clamp(48px,6vw,90px)}
+.life h2{max-width:11ch}
+.occasions{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule-dark);margin-top:clamp(48px,6vw,80px)}
+.occ{padding:28px 32px 4px 0}
+.occ+.occ{padding-left:32px;border-left:1px solid var(--rule-dark)}
+.occ .folio{color:var(--lime);opacity:1}
+.occ h3{font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:26px;margin:10px 0 8px;line-height:1.05}
+.occ p{margin:0 0 14px;font-size:15px;color:rgba(242,235,221,.75)}
+.occ a{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cream)}
+
+.clockout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.clockout-media{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.clockout-media img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.clockout-media .a{object-position:30% 50%}
+.slot{aspect-ratio:3/4;border:1.5px dashed rgba(242,235,221,.35);display:flex;flex-direction:column;justify-content:flex-end;padding:20px;background:repeating-linear-gradient(-45deg,rgba(242,235,221,.03) 0 12px,transparent 12px 24px)}
+.slot b{font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:20px;line-height:1.05;margin-bottom:8px}
+.slot span{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:rgba(242,235,221,.6)}
+
+/* catering */
+.cater-top{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,96px);align-items:end;margin-bottom:clamp(56px,7vw,96px)}
+.cater-hero{position:relative;margin:0 calc(var(--gut) * -1) clamp(56px,7vw,96px);}
+.cater-hero img{width:100%;height:clamp(320px,46vw,620px);object-fit:cover;object-position:50% 6%}
+.cater-hero figcaption{position:absolute;right:var(--gut);bottom:24px;background:var(--black);color:var(--cream);padding:16px 20px;max-width:340px}
+.cater-hero figcaption b{display:block;font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:22px;line-height:1.05}
+.cater-hero figcaption span{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime)}
+.kits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.kit{background:#fff8ea;border:1px solid var(--rule-light);padding:32px 30px 30px;display:flex;flex-direction:column;position:relative;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.kit:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgba(23,21,15,.35)}
+.kit.featured{background:var(--black);color:var(--cream);border-color:#000}
+.kit .folio{color:var(--orange-deep);opacity:1}
+.kit.featured .folio{color:var(--lime)}
+.kit .feeds{font-family:var(--display);font-weight:600;font-size:88px;line-height:.85;margin:22px 0 6px;letter-spacing:-.01em}
+.kit .feeds small{font-size:.28em;font-weight:500;letter-spacing:.08em;margin-left:6px;vertical-align:top;position:relative;top:.5em}
+.kit h3{font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:28px;margin:6px 0 14px}
+.kit ul{list-style:none;padding:0;margin:0 0 26px;font-size:15px}
+.kit li{padding:8px 0;border-top:1px solid var(--rule-light)}
+.kit.featured li{border-color:var(--rule-dark)}
+.kit .q{margin-top:auto;font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-cream)}
+.kit.featured .q{color:rgba(242,235,221,.65)}
+.badge{position:absolute;top:-12px;right:24px;background:var(--lime);color:#000;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:clamp(64px,8vw,110px) 0;border-top:2px solid var(--paper-ink)}
+.step3{padding:28px 32px 0 0}
+.step3+.step3{padding-left:32px;border-left:1px solid var(--rule-light)}
+.step3 .num{font-family:var(--display);font-weight:600;font-size:64px;line-height:1;color:var(--orange)}
+.step3 h4{font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:24px;margin:12px 0 8px}
+.step3 p{margin:0;color:var(--muted-cream);font-size:15.5px}
+.cater-tools{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px}
+.estimator{background:var(--black);color:var(--cream);padding:clamp(28px,4vw,48px)}
+.estimator label{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--lime)}
+.est-count{font-family:var(--display);font-weight:600;font-size:clamp(80px,9vw,128px);line-height:.85;margin:18px 0 4px;font-variant-numeric:tabular-nums}
+.est-count small{font-size:.24em;font-weight:500;letter-spacing:.08em;margin-left:10px;color:rgba(242,235,221,.7)}
+input[type=range]{width:100%;accent-color:var(--orange);margin:18px 0 26px;height:28px}
+.est-out{list-style:none;margin:0;padding:0}
+.est-out li{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--rule-dark);font-size:15.5px}
+.est-out li b{font-family:var(--display);font-size:22px;font-weight:500;color:var(--orange)}
+.est-out li.rec b{color:var(--lime)}
+.quote{background:#fff8ea;border:1px solid var(--rule-light);padding:clamp(28px,4vw,48px)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 18px;margin-top:22px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--paper-ink)}
+.field input,.field select,.field textarea{font:inherit;font-size:16px;color:var(--paper-ink);background:var(--cream);border:1px solid rgba(23,21,15,.3);border-radius:0;padding:13px 14px;width:100%}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--orange-deep);outline-offset:0;border-color:transparent}
+.form-foot{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:24px;flex-wrap:wrap}
+.form-foot p{margin:0;font-size:13px;color:var(--muted-cream);max-width:30em}
+.confirm{display:none;padding:22px 24px;border-left:4px solid var(--orange);background:var(--cream);margin-top:22px}
+.confirm.show{display:block;animation:rise .5s cubic-bezier(.2,.8,.2,1)}
+.confirm b{font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:22px;display:block}
+
+/* join */
+.join{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
+.join-form{border-top:1px solid var(--rule-dark);padding-top:32px}
+.toggle{display:inline-grid;grid-template-columns:1fr 1fr;border:1px solid var(--rule-dark);border-radius:999px;padding:4px;margin-bottom:22px}
+.toggle button{background:none;border:0;color:var(--cream);font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:10px 22px;border-radius:999px;cursor:pointer}
+.toggle button[aria-pressed="true"]{background:var(--cream);color:#000}
+.join-row{display:flex;gap:10px}
+.join-row input{flex:1;min-width:0;font:inherit;font-size:17px;background:transparent;color:var(--cream);border:0;border-bottom:1.5px solid rgba(242,235,221,.5);padding:14px 2px}
+.join-row input::placeholder{color:rgba(242,235,221,.45)}
+.join-row input:focus{outline:none;border-bottom-color:var(--lime)}
+.join .fine{margin-top:16px}
+.join-confirm{display:none;margin-top:22px;border-left:4px solid var(--lime);padding:14px 18px;background:#111}
+.join-confirm.show{display:block;animation:rise .5s cubic-bezier(.2,.8,.2,1)}
+.perks{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:0}
+.perks li{display:flex;gap:16px;padding:14px 0;border-top:1px solid var(--rule-dark);font-size:15.5px;color:rgba(242,235,221,.8)}
+.perks li span{font-family:var(--mono);font-size:12px;color:var(--lime);padding-top:3px}
+
+/* visit */
+.visit-top{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px);align-items:end;margin-bottom:clamp(48px,6vw,80px)}
+.route{list-style:none;padding:0;margin:0;border-top:2px solid var(--paper-ink)}
+.route li{display:grid;grid-template-columns:clamp(84px,11vw,170px) 1fr minmax(0,.9fr);gap:clamp(18px,3vw,48px);align-items:center;padding:clamp(22px,3vw,36px) 0;border-bottom:1px solid var(--rule-light)}
+.route .n{font-family:var(--display);font-weight:600;font-size:clamp(64px,8vw,128px);line-height:.8;color:var(--orange)}
+.route li:last-child .n{color:var(--paper-ink)}
+.route h3{font-family:var(--display);text-transform:uppercase;font-weight:600;font-size:clamp(30px,3.6vw,54px);line-height:.95;margin:0}
+.route p{margin:0;font-size:16px;color:var(--muted-cream)}
+.route p b{color:var(--paper-ink)}
+.visit-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:clamp(56px,7vw,96px)}
+.map{position:relative;background:var(--black);color:var(--cream);min-height:420px;overflow:hidden}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.map .pin-label{position:absolute;right:24px;top:24px;text-align:right;max-width:60%}
+.map .scale{position:absolute;right:24px;bottom:20px}
+.map .pin-label b{font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:24px;line-height:1.05;display:block}
+.info{background:#fff8ea;border:1px solid var(--rule-light);padding:clamp(26px,3.5vw,40px);display:flex;flex-direction:column;gap:22px}
+.info dl{margin:0;display:grid;gap:18px}
+.info dt{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-deep)}
+.info dd{margin:4px 0 0;font-family:var(--display);font-size:24px;line-height:1.15;text-transform:uppercase;font-weight:500}
+.info dd small{display:block;font-family:var(--body);text-transform:none;font-size:13px;color:var(--muted-cream);font-weight:400;margin-top:4px}
+.info a{text-decoration:none}
+
+/* crew */
+.crew{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(32px,5vw,80px);align-items:center;margin-top:clamp(80px,10vw,140px);background:var(--black);color:var(--cream);padding:clamp(32px,5vw,72px);overflow:hidden}
+.crew-art{position:relative;margin:-10px 0 -20px}
+.crew-art img{width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.5))}
+.crew-art::before{content:"";position:absolute;inset:12% 6% 4%;border-radius:50%;background:radial-gradient(closest-side,rgba(240,78,20,.32),rgba(240,78,20,0));z-index:0}
+.crew-art img{position:relative;z-index:1}
+.picker{display:flex;gap:8px;margin:26px 0 18px;flex-wrap:wrap}
+.picker button{background:none;border:1px solid var(--rule-dark);color:var(--cream);font-family:var(--display);text-transform:uppercase;font-size:20px;letter-spacing:.06em;padding:10px 22px;border-radius:999px;cursor:pointer;transition:all .25s}
+.picker button[aria-pressed="true"]{background:var(--orange);border-color:var(--orange);color:#000}
+.pick-out{min-height:84px;border-top:1px solid var(--rule-dark);padding-top:16px}
+.pick-out b{font-family:var(--display);text-transform:uppercase;font-weight:500;font-size:22px;display:block}
+.pick-out span{color:rgba(242,235,221,.75);font-size:15.5px}
+
+/* footer */
+footer{border-top:1px solid var(--rule-dark);padding:clamp(64px,8vw,110px) 0 40px}
+.foot-sign{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;padding-bottom:clamp(48px,6vw,80px);border-bottom:1px solid var(--rule-dark)}
+.foot-sign img{width:min(420px,100%);height:auto}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px;padding:44px 0}
+.foot-grid h4{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--lime);margin:0 0 14px}
+.foot-grid p,.foot-grid li{font-size:15px;color:rgba(242,235,221,.78);margin:0}
+.foot-grid ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.foot-grid a{text-decoration:none}
+.foot-grid a:hover{color:var(--cream);text-decoration:underline}
+.foot-base{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:26px;border-top:1px solid var(--rule-dark);font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:rgba(242,235,221,.6);line-height:1.7}
+
+.deal-grid>*,.split-head>*,.menu-grid>*,.clockout>*,.cater-top>*,.join>*,.visit-top>*,.visit-grid>*,.cater-tools>*,.crew>*,.wings-feature>*,.clockout-media>*,.menu-cols>*,.kits>*{min-width:0}
+/* mobile order bar */
+.mbar{display:none}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .hero h1,.hero .kicker,.hero .lede,.hero .ctas,.hero .formerly{opacity:1}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* responsive */
+@media (max-width:1080px){
+  .nav{display:none}
+  .header .btn{margin-left:auto}
+  .wings-feature{grid-template-columns:1fr}
+  .wings-feature img{min-height:0;aspect-ratio:16/10}
+  .batch{border-left:0;border-top:1px solid var(--rule-dark)}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  body{font-size:16px}
+  .strip .wrap{justify-content:center;text-align:center}
+  .strip .hide-m{display:none}
+  .header .wrap{height:64px;gap:16px}
+  .brand img{height:42px}
+  .header .btn{display:none}
+  .hero{min-height:0;display:block}
+  .hero-media{position:relative;height:min(56vh,480px);min-height:340px}
+  .hero-media img{object-position:62% 50%}
+  .hero-media::after{background:linear-gradient(0deg,#000 0%,rgba(0,0,0,0) 45%)}
+  .hero .wrap{padding-top:0;margin-top:-90px;padding-bottom:56px}
+  .hero-caption{display:none}
+  .hero .ctas .btn{flex:1 1 auto}
+  .proof ul{grid-template-columns:1fr}
+  .proof li{border-left:0;padding-left:0;border-top:1px solid var(--rule-dark);padding:20px 0}
+  .proof li:first-child{border-top:0}
+  .deal-grid,.split-head,.menu-grid,.clockout,.cater-top,.join,.visit-top,.visit-grid,.cater-tools,.crew{grid-template-columns:1fr}
+  .deal-media{order:-1}
+  .deal-media img{aspect-ratio:4/3.4}
+  .flavor-grid{grid-template-columns:1fr}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .menu-media img{aspect-ratio:4/3}
+  .occasions{grid-template-columns:1fr}
+  .occ,.occ+.occ{padding:22px 0 6px;border-left:0;border-top:1px solid var(--rule-dark)}
+  .occ:first-child{border-top:0}
+  .life>img{aspect-ratio:4/3.4;object-position:38% 30%}
+  .life::after{aspect-ratio:4/3.4}
+  .life .wrap{margin-top:-90px}
+  .kits{grid-template-columns:1fr;gap:26px}
+  .steps3{grid-template-columns:1fr}
+  .step3,.step3+.step3{padding:24px 0;border-left:0;border-bottom:1px solid var(--rule-light)}
+  .form-grid{grid-template-columns:1fr}
+  .cater-hero figcaption{position:static;max-width:none}
+  .route li{grid-template-columns:auto 1fr;row-gap:8px}
+  .route li p{grid-column:2}
+  .map{min-height:0;display:flex;flex-direction:column}
+  .map svg{position:relative;inset:auto;height:auto;aspect-ratio:800/480;order:2}
+  .map .pin-label{position:static;order:1;text-align:left;max-width:none;padding:22px 22px 6px}
+  .map .scale{position:static;order:3;padding:0 22px 18px}
+  .crew{padding:32px 22px}
+  .crew-art{max-width:420px;margin:0 auto}
+  .foot-sign{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  footer{padding-bottom:110px}
+  .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(0,0,0,.94);border-top:1px solid var(--rule-dark);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .mbar .btn{padding:14px 10px;font-size:16px}
+  .mbar .btn-primary{flex:1.6}
+  .mbar .btn-ghost{flex:1}
+}
+@media (max-width:420px){
+  .seg button{font-size:19px}
+  .kit .feeds{font-size:76px}
+  .join-row{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="strip" role="note">
+  <div class="wrap">
+    <span><b>Formerly Wing Boys</b><span class="hide-m"> &nbsp;/&nbsp; Same kitchen. New name.</span></span>
+    <span class="hide-m">Inside the IN-n-OUT Market &amp; Kitchen &middot; 5550 Troost Ave</span>
+  </div>
+</div>
+
+<header class="header dark">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Wing-Nerds Flavor Lab home"><img src="../shared/logo_web.png" alt="The Wing Wing-Nerds Flavor Lab" width="162" height="54"></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#menu">Menu</a>
+      <a href="#lab">The Lab</a>
+      <a href="#catering">Catering</a>
+      <a href="#visit">Visit</a>
+      <a href="#join">Join</a>
+    </nav>
+    <a class="btn btn-primary" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order Pickup <span class="arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero dark" id="top" aria-labelledby="hero-h">
+  <div class="hero-media">
+    <img src="../assets/cover_hero.jpg" alt="Glazed Wing-Nerds wings and seasoned fries in a black tray beside a Wing-Nerds Flavor Lab box" width="1536" height="1024" fetchpriority="high">
+  </div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker">Wing-Nerds Flavor Lab &middot; Troost Ave, KC</p>
+      <h1 class="h-xl" id="hero-h">Good company.<br><span class="accent-o">Serious wings.</span></h1>
+      <p class="lede">Wings, sliders and the Adult Meal Deal, made to order on Troost. Order ahead, walk in, pick it up hot. Flavor worth geeking out over.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order Pickup <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-ghost" href="https://www.doordash.com/" rel="noopener">Delivery</a>
+      </div>
+      <p class="formerly"><span>Formerly <s>Wing Boys</s></span><span aria-hidden="true">/</span><span>Same kitchen, same counter</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof dark" aria-label="Quick facts">
+  <div class="wrap">
+    <ul>
+      <li><span class="big">4.8<span class="star" aria-hidden="true">&#9733;</span></span><span class="small">Rated on<br>DoorDash</span></li>
+      <li><span class="big">As featured</span><span class="small">by Hood Dude<br>Food Reviews</span></li>
+      <li><span class="big">Tue&ndash;Sat</span><span class="small">11 AM &ndash; 8 PM<br>Pickup on Troost</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ADULT MEAL DEAL -->
+<section class="cream pad" id="deal" aria-labelledby="deal-h">
+  <div class="wrap deal-grid">
+    <figure class="deal-media reveal" style="margin:0">
+      <img src="../assets/up_packaging.jpg" alt="Wing-Nerds box of glazed wings and fries with a cup of lemonade" width="1536" height="1024" loading="lazy" style="object-position:30% 60%">
+      <figcaption>The treat you earned</figcaption>
+    </figure>
+    <div class="reveal">
+      <p class="signature">Home of the Adult Meal Deal</p>
+      <p class="kicker">No. 02 &mdash; The signature</p>
+      <h2 class="h-l" id="deal-h">The Adult<br>Meal Deal</h2>
+      <div class="price-row">
+        <span class="price"><sup>$</sup>24.99</span>
+        <span class="price-note">One box.<br>Everything handled.</span>
+      </div>
+      <ol class="deal-list">
+        <li><strong>6 Wings</strong><span>Your flavor</span></li>
+        <li><strong>A Slider</strong><span>Off the flat-top</span></li>
+        <li><strong>Fries or Corn</strong><span>Your call</span></li>
+        <li><strong>Uncle Keith's Cookie</strong><span>For after</span></li>
+        <li><strong>32 oz Uncle Keith's Lemonade</strong><span>11 flavors</span></li>
+      </ol>
+      <a class="btn btn-ink" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order the Adult Meal Deal <span class="arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- WINGS / THE LAB -->
+<section class="dark pad" id="lab" aria-labelledby="lab-h">
+  <div class="wrap">
+    <div class="split-head reveal">
+      <div>
+        <p class="kicker">No. 03 &mdash; The Lab</p>
+        <h2 class="h-l" id="lab-h">Choose your flavor.<br><span class="accent-l">Name your run.</span></h2>
+      </div>
+      <p class="lede">Bone-in or boneless, sauced or dry-rubbed. Pick a batch size, then mix up to two flavors per order.</p>
+    </div>
+
+    <div class="wings-feature reveal">
+      <img src="../assets/product_wings.jpg" alt="A platter of saucy orange buffalo wings next to lemon pepper dry-rub wings" width="1536" height="1024" loading="lazy">
+      <div class="batch">
+        <div>
+          <p class="kicker" style="margin-bottom:14px">Build your batch</p>
+          <div class="seg" role="group" aria-label="Wing count">
+            <button type="button" data-i="0" aria-pressed="true">6</button>
+            <button type="button" data-i="1" aria-pressed="false">12</button>
+            <button type="button" data-i="2" aria-pressed="false">18</button>
+            <button type="button" data-i="3" aria-pressed="false">24</button>
+          </div>
+        </div>
+        <ul class="prices" aria-live="polite">
+          <li><span class="n">Wing Combo<small>The full combo</small></span><span class="p" data-p="11.49,16.49,22.99,29.99">$11.49</span></li>
+          <li><span class="n">Bone-in<small>Wings only</small></span><span class="p" data-p="7.49,13.49,19.49,27.49">$7.49</span></li>
+          <li><span class="n">Boneless<small>Wings only</small></span><span class="p" data-p="6.49,10.49,16.49,24.49">$6.49</span></li>
+        </ul>
+        <p class="fine">Up to 2 flavors per order. <span class="js-count">6</span>-piece prices shown.</p>
+        <a class="btn btn-primary" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener" style="align-self:flex-start">Build it on Toast <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="flavors-head reveal">
+      <div>
+        <p class="kicker" style="margin-bottom:12px">The flavor index</p>
+        <h3 class="h-m">14 flavors. One heat scale.</h3>
+      </div>
+      <div class="chips" role="group" aria-label="Filter flavors">
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="wet" aria-pressed="false">Sauced</button>
+        <button type="button" data-f="dry" aria-pressed="false">Dry rub</button>
+        <button type="button" data-f="hot" aria-pressed="false">Heat 3+</button>
+      </div>
+    </div>
+    <ul class="flavor-grid" id="flavors"></ul>
+    <div class="legend">
+      <span class="fine">Heat levels proposed &middot; 1 mild to 5 lab-grade</span>
+      <span class="fine">Proposed item names, pending owner approval</span>
+    </div>
+  </div>
+</section>
+
+<!-- SLIDERS / MENU -->
+<section class="cream pad" id="menu" aria-labelledby="menu-h">
+  <div class="wrap menu-grid">
+    <div class="menu-media reveal">
+      <img src="../assets/product_sliders.jpg" alt="Three bacon cheeseburger sliders on toasted buns" width="1374" height="1145" loading="lazy">
+    </div>
+    <div class="reveal">
+      <p class="kicker">No. 04 &mdash; Beyond the wing</p>
+      <h2 class="h-l" id="menu-h">Sliders, dogs<br>&amp; the sides.</h2>
+      <div class="menu-cols">
+        <div class="menu-block">
+          <h3>Signature sliders &middot; $3.99 ea</h3>
+          <ul>
+            <li><span><b>Tennessee Smoke</b><em>Smoky, glazed</em></span></li>
+            <li><span><b>Smooth Operator</b><em>Rich and mellow</em></span></li>
+            <li><span><b>Crunch Theory</b><em>Extra crunch</em></span></li>
+            <li><span><b>Bacon Hypothesis</b><em>Bacon, tested</em></span></li>
+            <li><span><b>Slider combos</b><em>1 / 2 / 3 / 4</em></span><span class="pr">$6.99&ndash;13.99</span></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h3>Chicken &amp; dogs</h3>
+          <ul>
+            <li><span><b>Chicken Slider</b><em>Combos $8.99 / $12.99 / $15.99</em></span><span class="pr">$4.99</span></li>
+            <li><span><b>Classic Dog</b></span><span class="pr">$3.99</span></li>
+            <li><span><b>Polish Dog</b></span><span class="pr">$4.99</span></li>
+            <li><span><b>Diablo Dog</b><em>Bacon-wrapped Polish</em></span><span class="pr">$5.99</span></li>
+            <li><span><b>Citrus Lab Strips</b><em>3 pc</em></span><span class="pr">$9.99</span></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h3>Sides</h3>
+          <ul>
+            <li><span><b>Fries</b><em>Large $3.99</em></span><span class="pr">$2.99</span></li>
+            <li><span><b>Corn on the Cob</b><em>5 pc &middot; 10 pc $5.39</em></span><span class="pr">$3.39</span></li>
+            <li><span><b>Crab Rangoon</b><em>4 pc &middot; 6 pc $8.99</em></span><span class="pr">$5.99</span></li>
+            <li><span><b>Mozzarella Sticks</b><em>4 pc</em></span><span class="pr">$4.99</span></li>
+            <li><span><b>Queso Cup</b></span><span class="pr">$2.79</span></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h3>Uncle Keith's</h3>
+          <ul>
+            <li><span><b>Lemonade 16 oz</b><em>11 flavors</em></span><span class="pr">$3.99</span></li>
+            <li><span><b>Lemonade 32 oz</b><em>Strawberry to Green Apple</em></span><span class="pr">$5.99</span></li>
+            <li><span><b>Uncle Keith's Cookie</b></span><span class="pr">$2.49</span></li>
+            <li><span><b>Dipping Sauce</b></span><span class="pr">$0.79</span></li>
+            <li><span><b>12 oz Can</b></span><span class="pr">$0.99</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="proposed">Proposed item names, pending owner approval</p>
+      <p style="margin-top:28px"><a class="textlink" href="#menu">See the full menu &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- LIFESTYLE -->
+<section class="life dark" aria-labelledby="life-h">
+  <img src="../assets/up_good_company.jpg" alt="Four friends laughing and sharing wings and sliders from a Wing-Nerds box at a dinner table" width="1536" height="1024" loading="lazy">
+  <div class="wrap">
+    <p class="kicker">No. 05 &mdash; Grown folks</p>
+    <h2 class="h-xl" id="life-h">Grown folks.<br><span class="accent-o">Big flavor.</span></h2>
+    <div class="occasions">
+      <div class="occ">
+        <span class="folio">5:30 PM</span>
+        <h3>The after-work pickup</h3>
+        <p>Order from the parking lot. Walk in, give your name, walk out with dinner handled.</p>
+        <a href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order pickup</a>
+      </div>
+      <div class="occ">
+        <span class="folio">Friday</span>
+        <h3>The treat</h3>
+        <p>Six wings, a slider, a side, a cookie and 32 ounces of lemonade. You earned the box.</p>
+        <a href="#deal">The Adult Meal Deal</a>
+      </div>
+      <div class="occ">
+        <span class="folio">12:00 PM</span>
+        <h3>The office lunch</h3>
+        <p>Lab Kits for 25, 50 or the whole floor. Tell us the headcount a day ahead.</p>
+        <a href="#catering">Plan a Lab Kit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark pad" aria-labelledby="clock-h" style="padding-top:clamp(64px,8vw,120px)">
+  <div class="wrap clockout">
+    <div class="reveal">
+      <p class="kicker">After hours</p>
+      <h2 class="h-l" id="clock-h">Clock out.<br><span class="accent-l">Flavor on.</span></h2>
+      <p class="lede" style="margin-top:24px">No reservations, no dress code. Just a counter on Troost that knows your order by the second visit.</p>
+      <p style="margin-top:32px"><a class="btn btn-primary" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order Pickup <span class="arrow" aria-hidden="true">&rarr;</span></a></p>
+    </div>
+    <div class="clockout-media reveal">
+      <img class="a" src="../assets/up_hero_food.jpg" alt="Close view of sticky glazed wings in a tray with fries" width="1536" height="1024" loading="lazy">
+      <div class="slot" role="img" aria-label="Placeholder for a real customer photo">
+        <b>Your photo<br>goes here</b>
+        <span>Real customer photo slot &middot; tag @wingnerdskc</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATERING -->
+<section class="cream pad" id="catering" aria-labelledby="cater-h">
+  <div class="wrap">
+    <div class="cater-top reveal">
+      <div>
+        <p class="kicker">No. 06 &mdash; Catering &amp; office lunch</p>
+        <h2 class="h-xl" id="cater-h">Lab Kits.</h2>
+      </div>
+      <p class="lede">Feed the meeting, the shift or the whole floor. Wings by the tray, sliders, sides and Uncle Keith's lemonade, packed, labeled and ready at the counter. Order 24 hours ahead.</p>
+    </div>
+
+    <figure class="cater-hero reveal">
+      <img src="../assets/uniform_models.jpg" alt="Two Wing-Nerds crew members in black aprons and lime glasses, each holding a Wing-Nerds meal box" width="1536" height="1024" loading="lazy">
+      <figcaption><span>Packed by the crew</span><b>Labeled by flavor. Ready on time.</b></figcaption>
+    </figure>
+
+    <div class="kits">
+      <article class="kit reveal">
+        <span class="folio">Kit 01</span>
+        <div class="feeds">25<small>GUESTS</small></div>
+        <h3>The Lab Kit 25</h3>
+        <ul>
+          <li>Wings by the tray, up to your flavor mix</li>
+          <li>Signature sliders</li>
+          <li>Fries or corn, sauces on the side</li>
+          <li>Uncle Keith's lemonade by the gallon or cup</li>
+        </ul>
+        <p class="q">Team lunch &middot; Priced on quote</p>
+      </article>
+      <article class="kit featured reveal">
+        <span class="badge">Office lunch size</span>
+        <span class="folio">Kit 02</span>
+        <div class="feeds">50<small>GUESTS</small></div>
+        <h3>The Lab Kit 50</h3>
+        <ul>
+          <li>Everything in Kit 25, doubled</li>
+          <li>More flavor lanes, labeled by heat</li>
+          <li>Chicken sliders and strips for the mild crowd</li>
+          <li>Cookies for the whole room</li>
+        </ul>
+        <p class="q">All-hands &middot; Priced on quote</p>
+      </article>
+      <article class="kit reveal">
+        <span class="folio">Kit 03</span>
+        <div class="feeds">50+<small></small></div>
+        <h3>The Full Experiment</h3>
+        <ul>
+          <li>Built around your headcount and menu</li>
+          <li>Wings, sliders, dogs and sides</li>
+          <li>Flavor-by-flavor labeling</li>
+          <li>We plan it with you, line by line</li>
+        </ul>
+        <p class="q">Events &amp; big days &middot; Custom quote</p>
+      </article>
+    </div>
+
+    <div class="steps3">
+      <div class="step3 reveal"><div class="num">01</div><h4>Tell us the headcount</h4><p>Send the quote form below, or call 816-895-3498. Date, time and how many you're feeding.</p></div>
+      <div class="step3 reveal"><div class="num">02</div><h4>Pick the flavors</h4><p>We confirm the kit, the flavor mix and the price. Order at least 24 hours ahead.</p></div>
+      <div class="step3 reveal"><div class="num">03</div><h4>Pick it up hot</h4><p>Come to the counter inside the IN-n-OUT Market. Your kit is packed, labeled and waiting under your name.</p></div>
+    </div>
+
+    <div class="cater-tools">
+      <div class="estimator reveal" aria-labelledby="est-h">
+        <h3 class="sr" id="est-h">Feeds estimate</h3>
+        <label for="guests">How many are you feeding?</label>
+        <div class="est-count"><span id="guestOut">30</span><small>GUESTS</small></div>
+        <input type="range" id="guests" min="10" max="150" step="5" value="30" aria-describedby="est-note">
+        <ul class="est-out" aria-live="polite">
+          <li class="rec"><span>Suggested kit</span><b id="estKit">Lab Kit 50</b></li>
+          <li><span>Wings (about 6 a guest)</span><b id="estWings">180</b></li>
+          <li><span>Sliders (about 1 a guest)</span><b id="estSliders">30</b></li>
+          <li><span>Lemonade (16 oz each)</span><b id="estLem">30</b></li>
+        </ul>
+        <p class="fine" id="est-note" style="margin:18px 0 0">Planning estimate only. Final amounts confirmed with your quote.</p>
+      </div>
+
+      <div class="quote reveal">
+        <p class="kicker" style="margin-bottom:8px">Request a quote</p>
+        <h3 class="h-m">Plan your Lab Kit</h3>
+        <form id="quoteForm" novalidate>
+          <div class="form-grid">
+            <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="q-co">Company / group</label><input id="q-co" name="company" autocomplete="organization"></div>
+            <div class="field"><label for="q-phone">Phone or email</label><input id="q-phone" name="contact" required></div>
+            <div class="field"><label for="q-date">Pickup date</label><input id="q-date" name="date" type="date" required></div>
+            <div class="field"><label for="q-kit">Kit</label>
+              <select id="q-kit" name="kit">
+                <option>Lab Kit 25</option>
+                <option selected>Lab Kit 50</option>
+                <option>The Full Experiment</option>
+                <option>Not sure yet</option>
+              </select></div>
+            <div class="field"><label for="q-count">Headcount</label><input id="q-count" name="count" type="number" min="1" inputmode="numeric" value="30"></div>
+            <div class="field full"><label for="q-notes">Flavors, heat, allergies, timing</label><textarea id="q-notes" name="notes" placeholder="Half Lemon Drop, half Sweet Heat Theory. Pickup at 11:45."></textarea></div>
+          </div>
+          <div class="form-foot">
+            <p>24-hour lead time. We reply to confirm the kit and price before anything is final.</p>
+            <button class="btn btn-ink" type="submit">Request quote <span class="arrow" aria-hidden="true">&rarr;</span></button>
+          </div>
+          <div class="confirm" id="quoteConfirm" role="status" tabindex="-1">
+            <b>Request noted. Thank you.</b>
+            This is a design preview, so nothing was sent. On the live site, the Lab replies to confirm your kit, flavors and price.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN -->
+<section class="dark pad" id="join" aria-labelledby="join-h">
+  <div class="wrap join">
+    <div class="reveal">
+      <p class="kicker">No. 07 &mdash; Join the Lab</p>
+      <h2 class="h-l" id="join-h">First to know.<br><span class="accent-o">First in line.</span></h2>
+      <ul class="perks">
+        <li><span>01</span>New flavors when they leave the lab</li>
+        <li><span>02</span>Hours and holiday updates, straight from the counter</li>
+        <li><span>03</span>Catering dates as they open up</li>
+      </ul>
+    </div>
+    <div class="join-form reveal">
+      <div class="toggle" role="group" aria-label="Sign up by">
+        <button type="button" data-mode="sms" aria-pressed="true">Text</button>
+        <button type="button" data-mode="email" aria-pressed="false">Email</button>
+      </div>
+      <form id="joinForm" novalidate>
+        <label class="sr" for="joinInput" id="joinLabel">Mobile number</label>
+        <div class="join-row">
+          <input id="joinInput" type="tel" inputmode="tel" autocomplete="tel" placeholder="Mobile number" required>
+          <button class="btn btn-primary" type="submit">Join the Lab</button>
+        </div>
+        <p class="fine">Occasional messages. Opt out any time.</p>
+        <div class="join-confirm" id="joinConfirm" role="status" tabindex="-1"><b class="accent-l" style="font-family:var(--display);text-transform:uppercase;font-size:20px;font-weight:500">You're on the list.</b><br>Design preview: nothing was sent. On the live site you'd get a welcome message from the Lab.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="cream pad" id="visit" aria-labelledby="visit-h">
+  <div class="wrap">
+    <div class="visit-top reveal">
+      <div>
+        <p class="kicker">No. 08 &mdash; Find the counter</p>
+        <h2 class="h-xl" id="visit-h">We're inside.</h2>
+      </div>
+      <p class="lede">Wing-Nerds is a kitchen counter inside the IN-n-OUT Market &amp; Kitchen. No separate storefront. Four steps and you're there.</p>
+    </div>
+
+    <ol class="route">
+      <li class="reveal"><span class="n">1</span><h3>Head to 5550 Troost</h3><p>Kansas City, MO 64110. Look for the <b>IN-n-OUT Market &amp; Kitchen</b> sign, not a Wing-Nerds storefront.</p></li>
+      <li class="reveal"><span class="n">2</span><h3>Walk into the market</h3><p>Go through the <b>main market doors</b>. You're in the right place.</p></li>
+      <li class="reveal"><span class="n">3</span><h3>Find the kitchen counter</h3><p>The <b>Wing-Nerds kitchen counter</b> is inside the market. Follow the smell of wings.</p></li>
+      <li class="reveal"><span class="n">4</span><h3>Give the name on your order</h3><p>Tell the crew <b>the name you used on Toast</b>. Your order is bagged and waiting.</p></li>
+    </ol>
+
+    <div class="visit-grid">
+      <div class="map reveal" role="img" aria-label="Simplified map: 5550 Troost Ave, Kansas City, with the kitchen counter inside the IN-n-OUT Market">
+        <svg viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(242,235,221,.06)" stroke-width="1"/></pattern>
+          </defs>
+          <rect width="800" height="480" fill="url(#grid)"/>
+          <rect x="0" y="170" width="800" height="34" fill="#1a1a1a"/>
+          <text x="560" y="192" fill="rgba(242,235,221,.45)" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="3">CROSS STREET</text>
+          <rect x="110" y="0" width="44" height="480" fill="#222"/>
+          <line x1="132" y1="0" x2="132" y2="480" stroke="#F5C518" stroke-width="1.5" stroke-dasharray="10 10" opacity=".6"/>
+          <text x="124" y="150" fill="rgba(242,235,221,.6)" font-family="JetBrains Mono, monospace" font-size="13" letter-spacing="3" transform="rotate(-90 124 150)">TROOST AVE</text>
+          <rect x="210" y="250" width="300" height="170" fill="none" stroke="#F2EBDD" stroke-width="2"/>
+          <text x="226" y="276" fill="#F2EBDD" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="2">IN-n-OUT MARKET &amp; KITCHEN</text>
+          <rect x="380" y="330" width="110" height="60" fill="#F04E14"/>
+          <text x="392" y="366" fill="#000" font-family="Oswald, sans-serif" font-size="17" font-weight="600" letter-spacing="1">COUNTER</text>
+          <rect x="210" y="320" width="6" height="40" fill="#A8F000"/>
+          <text x="224" y="312" fill="#A8F000" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="2">DOORS</text>
+          <path d="M154 340 H204" stroke="#A8F000" stroke-width="3" stroke-dasharray="6 6"/>
+          <path d="M222 340 C270 340 330 360 374 360" stroke="#A8F000" stroke-width="3" fill="none" stroke-dasharray="6 6"/>
+          <circle cx="132" cy="340" r="9" fill="#A8F000"/>
+          <circle cx="132" cy="340" r="18" fill="none" stroke="#A8F000" stroke-width="1.5" opacity=".6"/>
+        </svg>
+        <div class="pin-label">
+          <div><span class="folio" style="color:var(--lime);opacity:1">5550 Troost Ave &middot; KC, MO 64110</span><b>Inside the IN-n-OUT<br>Market &amp; Kitchen</b></div>
+          </div>
+        <span class="fine scale">Diagram, not to scale</span>
+      </div>
+      <div class="info reveal">
+        <dl>
+          <div><dt>Address</dt><dd>5550 Troost Ave<small>Inside the IN-n-OUT Market &amp; Kitchen, Kansas City, MO 64110</small></dd></div>
+          <div><dt>Hours</dt><dd>Tue&ndash;Sat &middot; 11&ndash;8<small>Closed Sunday &amp; Monday. Owner to confirm.</small></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+18168953498">816-895-3498</a></dd></div>
+        </dl>
+        <a class="btn btn-ink" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order ahead for pickup <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+
+    <div class="crew reveal" aria-labelledby="crew-h">
+      <div class="crew-art">
+        <img src="../shared/crew_trio.png" alt="The Flavor Crew: three cartoon chickens in tan, white and brown wearing lime nerd glasses and black Wing-Nerds aprons" width="1100" height="1078" loading="lazy">
+      </div>
+      <div>
+        <p class="kicker">Meet the Flavor Crew</p>
+        <h2 class="h-l" id="crew-h">Your order.<br><span class="accent-o">Our crew.</span></h2>
+        <p class="lede" style="margin-top:20px">Which one are you bringing to the table?</p>
+        <div class="picker" role="group" aria-label="Pick a crew member">
+          <button type="button" data-c="0" aria-pressed="true">Saucy</button>
+          <button type="button" data-c="1" aria-pressed="false">Crispy</button>
+          <button type="button" data-c="2" aria-pressed="false">Spicy</button>
+        </div>
+        <div class="pick-out" aria-live="polite"><b id="pickTitle">Saucy brings the glaze.</b><span id="pickBody">Try Sweet Heat Theory or Crowned BBQ, extra napkins on the side.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="dark">
+  <div class="wrap">
+    <div class="foot-sign">
+      <img src="../shared/logo_web.png" alt="Wing-Nerds Flavor Lab" width="420" height="140" loading="lazy">
+      <p class="h-m" style="text-align:right">Flavor worth<br><span class="accent-l">geeking out over.</span></p>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h4>Wing-Nerds Flavor Lab</h4>
+        <p>5550 Troost Ave, inside the IN-n-OUT Market &amp; Kitchen<br>Kansas City, MO 64110<br><a href="tel:+18168953498">816-895-3498</a></p>
+        <p style="margin-top:14px;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime)">Formerly Wing Boys</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Tuesday&ndash;Saturday<br>11 AM &ndash; 8 PM<br>Sunday &amp; Monday closed</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul><li><a href="#menu">Menu</a></li><li><a href="#lab">The Lab</a></li><li><a href="#catering">Catering</a></li><li><a href="#visit">Visit</a></li><li><a href="#join">Join</a></li></ul>
+      </div>
+      <div>
+        <h4>Follow &amp; order</h4>
+        <ul><li><a href="https://www.instagram.com/wingnerdskc" rel="noopener">Instagram @wingnerdskc</a></li><li><a href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order pickup on Toast</a></li><li><a href="https://www.doordash.com/" rel="noopener">Delivery on DoorDash</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>Allergen note: menu items may contain or come into contact with common allergens. Ask the crew about ingredients before you order.</span>
+      <span>Prices and hours subject to change. &middot; Concept imagery. Final site uses real Wing-Nerds photography. &middot; &copy; 2026 Wing-Nerds Flavor Lab</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Quick order">
+  <a class="btn btn-primary" href="https://toast.app/r/wing-boys-troost-5550-troost-avenue/order" rel="noopener">Order Pickup</a>
+  <a class="btn btn-ghost" href="#visit">Find us</a>
+</nav>
+
+<script>
+(function(){
+  // wing count toggle
+  var seg=document.querySelectorAll('.seg button'),prices=document.querySelectorAll('.prices .p'),cnt=document.querySelector('.js-count');
+  seg.forEach(function(b){b.addEventListener('click',function(){
+    seg.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');
+    var i=+b.dataset.i;prices.forEach(function(p){p.textContent='$'+p.dataset.p.split(',')[i]});cnt.textContent=b.textContent;
+  })});
+
+  // flavors
+  var F=[
+    ['Sweet Heat Theory','wet','Sweet glaze with a slow-building kick',3],
+    ['Jamaican Me Happy','wet','Jerk spice, allspice and pepper',3],
+    ['Lemon Drop','wet','Bright lemon pepper, sauced',1],
+    ['Crowned BBQ','wet','Sticky, smoky barbecue',1],
+    ['Garlic Parm Formula','wet','Garlic butter and parmesan',1],
+    ['Firestarter Buffalo','wet','Classic buffalo, turned all the way up',5],
+    ['Plain','wet','Just the wing. Sauce on the side',1],
+    ['Lemon Pepper Ranch','dry','Lemon pepper meets cool ranch',1],
+    ['Hint of Jalapeño','dry','Green chile warmth',2],
+    ['Spicy Citrus','dry','Zest first, heat second',3],
+    ['Cajun','dry','Paprika, garlic, cayenne',3],
+    ['Ranch','dry','Herby, savory, easy',1],
+    ['Sriracha Ranch','dry','Garlic-chile heat, cooled down',3],
+    ['Citrus Chili','dry','Lime, chile, a little sweet',4]
+  ];
+  var ul=document.getElementById('flavors');
+  ul.innerHTML=F.map(function(f){
+    var bars='';for(var i=1;i<=5;i++)bars+='<i class="'+(i<=f[3]?'on':'')+'"></i>';
+    return '<li class="flavor" data-type="'+f[1]+'" data-heat="'+f[3]+'"><h4>'+f[0]+'<span class="tag">'+(f[1]==='wet'?'Sauced':'Dry rub')+'</span></h4><p>'+f[2]+'</p><span class="heat" data-level="'+f[3]+'" role="img" aria-label="Heat '+f[3]+' of 5">'+bars+'</span></li>';
+  }).join('');
+  var chips=document.querySelectorAll('.chips button');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    chips.forEach(function(x){x.setAttribute('aria-pressed','false')});c.setAttribute('aria-pressed','true');
+    var f=c.dataset.f;
+    ul.querySelectorAll('.flavor').forEach(function(li){
+      var show=f==='all'||(f==='hot'?+li.dataset.heat>=3:li.dataset.type===f);li.hidden=!show;
+    });
+  })});
+
+  // estimator
+  var r=document.getElementById('guests');
+  function est(){var g=+r.value;
+    document.getElementById('guestOut').textContent=g;
+    document.getElementById('estWings').textContent=g*6;
+    document.getElementById('estSliders').textContent=g;
+    document.getElementById('estLem').textContent=g;
+    document.getElementById('estKit').textContent=g<=25?'Lab Kit 25':g<=50?'Lab Kit 50':'The Full Experiment';
+  }
+  r.addEventListener('input',est);est();
+
+  // quote form (visual only)
+  document.getElementById('quoteForm').addEventListener('submit',function(e){e.preventDefault();var c=document.getElementById('quoteConfirm');c.classList.add('show');c.focus();});
+
+  // join form (visual only)
+  var tb=document.querySelectorAll('.toggle button'),ji=document.getElementById('joinInput'),jl=document.getElementById('joinLabel');
+  tb.forEach(function(b){b.addEventListener('click',function(){
+    tb.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');
+    if(b.dataset.mode==='email'){ji.type='email';ji.inputMode='email';ji.autocomplete='email';ji.placeholder='Email address';jl.textContent='Email address';}
+    else{ji.type='tel';ji.inputMode='tel';ji.autocomplete='tel';ji.placeholder='Mobile number';jl.textContent='Mobile number';}
+  })});
+  document.getElementById('joinForm').addEventListener('submit',function(e){e.preventDefault();var c=document.getElementById('joinConfirm');c.classList.add('show');c.focus();});
+
+  // crew picker
+  var C=[
+    ['Saucy brings the glaze.','Try Sweet Heat Theory or Crowned BBQ, extra napkins on the side.'],
+    ['Crispy keeps it dry.','Go dry rub: Lemon Pepper Ranch or Cajun, sauce on the side.'],
+    ['Spicy came to sweat.','Firestarter Buffalo or Citrus Chili. Lemonade recommended.']
+  ];
+  var pb=document.querySelectorAll('.picker button');
+  pb.forEach(function(b){b.addEventListener('click',function(){
+    pb.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');
+    document.getElementById('pickTitle').textContent=C[b.dataset.c][0];document.getElementById('pickBody').textContent=C[b.dataset.c][1];
+  })});
+
+  // reveal
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){io.observe(el)});
+  } else els.forEach(function(el){el.classList.add('in')});
+})();
+</script>
+<style id="wn-review-nav-css">#wn-review-nav{position:fixed;left:14px;bottom:92px;z-index:2147483000;display:flex;gap:6px;font:600 12px/1 Inter,system-ui,sans-serif}#wn-review-nav a{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:999px;background:#000;color:#F2EBDD;border:1.5px solid #A8F000;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.45)}#wn-review-nav a:hover,#wn-review-nav a:focus-visible{background:#A8F000;color:#000;outline:none}@media(max-width:899px){#wn-review-nav{left:10px;bottom:84px}#wn-review-nav a{padding:7px 10px;font-size:11px;opacity:.92}}@media(min-width:900px){#wn-review-nav{bottom:20px;left:20px}}@media print{#wn-review-nav{display:none}}</style><nav id="wn-review-nav" aria-label="Concept review navigation"><a href="../index.html">← All concepts</a></nav><script>if(window.self!==window.top){var n=document.getElementById("wn-review-nav");n&&n.remove()}</script></body>
+</html>
