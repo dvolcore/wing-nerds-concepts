@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Wing-Nerds Store Transformation</title>
+<meta name="description" content="Drag left to right to see the Wing-Nerds location before and after.">
+<link rel="icon" href="../shared/logo_web.png">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--o:#F04E14;--l:#A8F000;--c:#F2EBDD;--mute:#b8b1a3;--line:#2a2a2a;--panel:#141414}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:#0a0a0a;color:var(--c);font:400 15px/1.5 Inter,system-ui,sans-serif;display:flex;flex-direction:column;min-height:100vh}
+.wrap{width:100%;max-width:1500px;margin:0 auto;padding:0 16px}
+.k{font:700 11px 'JetBrains Mono',monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--l)}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px}
+header img{width:132px;display:block}
+header h1{font:700 clamp(20px,3vw,32px)/1 Oswald,sans-serif;text-transform:uppercase;margin:0;letter-spacing:.01em}
+header h1 span{color:var(--o)}
+header .k{margin-left:auto;text-align:right}
+nav.scenes{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 0}
+nav.scenes button,.variants button,.ctl button{font:600 13px Inter;cursor:pointer;border-radius:999px;white-space:nowrap}
+nav.scenes button{background:#151515;color:var(--c);border:1px solid #333;padding:9px 16px}
+nav.scenes button b{font:700 11px 'JetBrains Mono';color:var(--mute);margin-right:6px}
+nav.scenes button[aria-pressed="true"]{background:var(--l);color:#000;border-color:var(--l)}
+nav.scenes button[aria-pressed="true"] b{color:#000}
+.variants{display:flex;gap:6px;margin-left:auto}
+.variants button{background:transparent;color:var(--mute);border:1px dashed #444;padding:7px 12px}
+.variants button[aria-pressed="true"]{color:var(--o);border:1px solid var(--o)}
+main{flex:1;display:flex;flex-direction:column}
+.stagebox{flex:1;display:flex;align-items:center;justify-content:center;min-height:0}
+.stage{position:relative;width:min(100%,calc((100vh - 200px) * var(--arn,1.7778)));aspect-ratio:var(--ar,16/9);margin:0 auto;overflow:hidden;border-radius:6px;background:#111;cursor:ew-resize;touch-action:pan-y;user-select:none;-webkit-user-select:none;outline:none}
+.stage:focus-visible{box-shadow:0 0 0 3px var(--l)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none}
+.stage .after{clip-path:inset(0 calc(100% - var(--p,0%)) 0 0)}
+.handle{position:absolute;top:0;bottom:0;left:var(--p,0%);width:0;pointer-events:none}
+.handle::before{content:"";position:absolute;top:0;bottom:0;left:-2px;width:4px;background:var(--l);box-shadow:0 0 18px rgba(168,240,0,.7)}
+.knob{position:absolute;top:50%;left:0;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:#0a0a0a;border:3px solid var(--l);display:grid;place-items:center;box-shadow:0 6px 24px rgba(0,0,0,.6)}
+.knob svg{width:26px;height:26px;stroke:var(--l);fill:none;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.tag{position:absolute;top:14px;font:700 12px 'JetBrains Mono',monospace;letter-spacing:.2em;padding:7px 11px;border-radius:3px;transition:opacity .25s;pointer-events:none}
+.tag.a{left:14px;background:var(--o);color:#fff}
+.tag.b{right:14px;background:rgba(10,10,10,.82);color:var(--c);border:1px solid #444}
+.hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);font:600 13px Inter;background:rgba(10,10,10,.8);border:1px solid #333;padding:7px 14px;border-radius:999px;pointer-events:none;transition:opacity .4s}
+.below{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:12px 0 16px}
+.cap{flex:1 1 420px;margin:0;color:var(--mute)}
+.cap strong{color:var(--c);font-weight:600}
+.ctl{display:flex;gap:6px;flex-wrap:wrap}
+.ctl button{background:#151515;color:var(--c);border:1px solid #333;padding:8px 14px}
+.ctl button:hover,nav.scenes button:hover,.variants button:hover{border-color:var(--l)}
+.ctl button.go{background:var(--o);border-color:var(--o);color:#fff;font:700 13px Oswald;letter-spacing:.06em;text-transform:uppercase;border-radius:4px}
+footer{border-top:1px solid var(--line);color:#7d776c;font-size:12px}
+footer .wrap{padding-top:10px;padding-bottom:12px}
+@media (max-width:720px){
+  header .k{display:none}
+  .variants{margin-left:0;width:100%}
+  main{flex:0 0 auto}
+  .stagebox{flex:0 0 auto}
+  .stage{width:100%}
+  footer{margin-top:auto}
+  .knob{width:44px;height:44px}
+  .tag{top:10px;font-size:10px;padding:5px 8px}.tag.a{left:10px}.tag.b{right:10px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <img src="../shared/logo_web.png" alt="Wing-Nerds">
+  <h1>Store <span>Transformation</span></h1>
+  <div class="k">Troost &amp; 56th · Concept</div>
+</div></header>
+
+<main>
+  <div class="wrap">
+    <nav class="scenes" aria-label="Location views">
+      <button data-scene="0" aria-pressed="true"><b>01</b>Storefront</button>
+      <button data-scene="1" aria-pressed="false"><b>02</b>Kitchen Counter</button>
+      <button data-scene="2" aria-pressed="false"><b>03</b>Market Aisle</button>
+      <div class="variants" id="variants"></div>
+    </nav>
+  </div>
+  <div class="wrap stagebox">
+    <div class="stage" id="stage" tabindex="0" role="slider" aria-label="Before and after comparison. Drag right to reveal the after." aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <img class="before" id="imgB" alt="">
+      <img class="after" id="imgA" alt="">
+      <div class="handle"><div class="knob"><svg viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></div></div>
+      <span class="tag a" id="tagA">AFTER</span>
+      <span class="tag b" id="tagB">BEFORE</span>
+      <span class="hint" id="hint">Drag left to right</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="below">
+      <p class="cap" id="cap"></p>
+      <div class="ctl">
+        <button class="go" id="play">▶ Reveal</button>
+        <button data-to="0">Before</button>
+        <button data-to="50">Split</button>
+        <button data-to="100">After</button>
+        <button id="prev" aria-label="Previous view">←</button>
+        <button id="next" aria-label="Next view">→</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer><div class="wrap">Concept renders built from photos of the current location. Menu text, prices and sign copy shown are placeholders until verified; final sizes are confirmed on site before anything is made.</div></footer>
+
+<script>
+const SCENES=[
+ {name:'Storefront',v:[
+  {label:'Crew mascots',img:'exterior-crew',ar:'1664/941',cap:'<strong>Storefront, crew version.</strong> The Wing-Nerds crew across the front windows, a "Kitchen Inside" arrow band, a menu panel and a feather flag. The LN-n-OUT market signs and the street pole stay.'},
+  {label:'Corner mural',img:'exterior-mural',ar:'1774/887',cap:'<strong>Storefront, mural version.</strong> An orange and lime wing mural on the corner wall, window vinyl, "Kitchen Inside" direction, a feather flag and light under the existing awnings. The host market signs stay.'}]},
+ {name:'Kitchen Counter',v:[
+  {label:'Menu TVs + crew',img:'counter-crew',ar:'1508/905',cap:'<strong>Kitchen counter, TV version.</strong> Three menu screens over the line, a crew counter wrap with Order Here and Pickup Here, and brand walls on both sides.'},
+  {label:'Counter wrap',img:'counter-wrap',ar:'1619/971',cap:'<strong>Kitchen counter, wrap version.</strong> The existing counter panels wrapped in charcoal, orange and lime with a lit edge, and the old menu replaced in the same spot. Food-contact stainless stays bare.'}]},
+ {name:'Market Aisle',v:[
+  {label:null,img:'aisle',ar:'1448/1086',cap:'<strong>Market aisle.</strong> The existing screens run food content, the rear kitchen gets a Wing-Nerds sign, and column and floor graphics lead customers through the market to the counter.'}]}
+];
+const stage=document.getElementById('stage'),imgA=document.getElementById('imgA'),imgB=document.getElementById('imgB'),
+tagA=document.getElementById('tagA'),tagB=document.getElementById('tagB'),hint=document.getElementById('hint'),
+cap=document.getElementById('cap'),varBox=document.getElementById('variants');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let s=0,v=0,p=0,anim=null,touched=false;
+function setP(x){p=Math.max(0,Math.min(100,x));stage.style.setProperty('--p',p+'%');stage.setAttribute('aria-valuenow',Math.round(p));
+ stage.setAttribute('aria-valuetext',Math.round(p)+'% after');tagA.style.opacity=p<8?0:1;tagB.style.opacity=p>92?0:1;}
+function stop(){if(anim){cancelAnimationFrame(anim);anim=null}}
+function tween(to,ms,cb){stop();const from=p,t0=performance.now();
+ const step=t=>{const k=Math.min(1,(t-t0)/ms),e=k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2;setP(from+(to-from)*e);
+  if(k<1)anim=requestAnimationFrame(step);else{anim=null;cb&&cb()}};anim=requestAnimationFrame(step);}
+function reveal(){if(reduce){setP(50);return}setP(0);setTimeout(()=>tween(100,2400,()=>setTimeout(()=>tween(50,900),700)),350);}
+function load(si,vi,auto=true){s=si;v=vi;const sc=SCENES[s],it=sc.v[v];
+ document.querySelectorAll('nav.scenes [data-scene]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.scene===s));
+ varBox.innerHTML='';if(sc.v.length>1)sc.v.forEach((x,i)=>{const b=document.createElement('button');b.textContent=x.label;b.setAttribute('aria-pressed',i===v);b.onclick=()=>load(s,i);varBox.appendChild(b)});
+ cap.innerHTML=it.cap;stop();setP(0);
+ let n=0;const ready=()=>{if(++n===2){stage.style.setProperty('--ar',it.ar);const [aw,ah]=it.ar.split('/');stage.style.setProperty('--arn',aw/ah);if(auto)reveal();else setP(50)}};
+ imgA.onload=imgB.onload=ready;imgB.alt=sc.name+' before';imgA.alt=sc.name+' after, concept';
+ imgB.src='img/'+it.img+'-before.jpg';imgA.src='img/'+it.img+'-after.jpg';
+ // preload the next scene
+ const nx=SCENES[(s+1)%SCENES.length].v[0].img;['before','after'].forEach(k=>{const i=new Image();i.src='img/'+nx+'-'+k+'.jpg'});}
+function fromEvent(e){const r=stage.getBoundingClientRect();return (e.clientX-r.left)/r.width*100}
+let drag=false;
+stage.addEventListener('pointerdown',e=>{drag=true;stop();stage.setPointerCapture(e.pointerId);setP(fromEvent(e));if(!touched){touched=true;hint.style.opacity=0}});
+stage.addEventListener('pointermove',e=>{if(drag)setP(fromEvent(e))});
+['pointerup','pointercancel'].forEach(t=>stage.addEventListener(t,()=>drag=false));
+stage.addEventListener('keydown',e=>{const k=e.key;let d=0;if(k==='ArrowRight')d=e.shiftKey?20:5;if(k==='ArrowLeft')d=e.shiftKey?-20:-5;
+ if(d){e.preventDefault();stop();setP(p+d)}if(k==='Home'){e.preventDefault();stop();setP(0)}if(k==='End'){e.preventDefault();stop();setP(100)}});
+document.querySelectorAll('nav.scenes [data-scene]').forEach(b=>b.onclick=()=>load(+b.dataset.scene,0));
+document.querySelectorAll('[data-to]').forEach(b=>b.onclick=()=>tween(+b.dataset.to,600));
+document.getElementById('play').onclick=reveal;
+document.getElementById('next').onclick=()=>load((s+1)%SCENES.length,0);
+document.getElementById('prev').onclick=()=>load((s+SCENES.length-1)%SCENES.length,0);
+document.addEventListener('keydown',e=>{if(e.target===stage)return;if(e.key==='ArrowRight')document.getElementById('next').click();if(e.key==='ArrowLeft')document.getElementById('prev').click();});
+load(0,0);
+</script>
+</body>
+</html>
